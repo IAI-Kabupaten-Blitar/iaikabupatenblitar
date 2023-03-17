@@ -1,112 +1,48 @@
-import React, { useState } from "react";
-import Swiper from "react-id-swiper";
-import "swiper/css/swiper.css";
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import BackgroundImage from "gatsby-background-image";
 
-const SliderTwo = () => {
-  const [swiper, setSwiper] = useState(null);
+const SliderTwo = ({className}) => {
 
-  const goNext = () => {
-    if (swiper !== null) {
-      swiper.slideNext();
+  const { Slider } = useStaticQuery(graphql`
+  {
+    Slider: file(absolutePath: {regex: "/sliders/slider1/"}) {
+      id
+      childImageSharp {
+        id
+        fluid(quality: 100, maxWidth: 1200) {
+	   ...GatsbyImageSharpFluid_withWebp
+        }
+      }
     }
-  };
-
-  const goPrev = () => {
-    if (swiper !== null) {
-      swiper.slidePrev();
-    }
-  };
-
+  }
+  `)
+ 
   return (
+    <BackgroundImage fluid={Slider.childImageSharp.fluid}>
     <section className="slider-area slider-area2 text-center">
       <div className="homepage-slide1">
-        <Swiper getSwiper={setSwiper}>
-          <div className="single-slide-item slide-bg4">
+          <div className="single-slide-item ">
             <div className="slide-item-table">
               <div className="slide-item-tablecell">
                 <div className="container">
                   <div className="row">
                     <div className="col-lg-8 mx-auto">
                       <div className="slider-heading">
-                        <p className="slider__meta">help the people in need</p>
+                        <p className="slider__meta">Ikatan Apoteker Indonesia Kabupaten Blitar</p>
                         <h2 className="slider__title">
-                          Your small help make world better
+                          Maju Bersama, Sejahtera Bersama
                         </h2>
-                        <a href="about" className="theme-btn">
-                          discover more
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="single-slide-item slide-bg3">
-            <div className="slide-item-table">
-              <div className="slide-item-tablecell">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-8 mx-auto">
-                      <div className="slider-heading">
-                        <p className="slider__meta">welcome to oxpitan</p>
-                        <h2 className="slider__title">
-                          Lend the helping hand get involved
-                        </h2>
-                        <a href="/about" className="theme-btn">
-                          discover more
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="single-slide-item slide-bg5">
-            <div className="slide-item-table">
-              <div className="slide-item-tablecell">
-                <div className="container">
-                  <div className="row">
-                    <div className="col-lg-8 mx-auto">
-                      <div className="slider-heading">
-                        <p className="slider__meta">welcome to oxpitan</p>
-                        <h2 className="slider__title">
-                          Lend the helping hand get involved
-                        </h2>
-                        <a href="/about" className="theme-btn">
-                          discover more
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Swiper>
-        <div className="owl-dots">
-          <div
-            role="button"
-            onClick={goPrev}
-            onKeyDown={goPrev}
-            tabIndex="0"
-            className="owl-dot"
-          >
-            <span></span>
-          </div>
-          <div
-            role="button"
-            onClick={goNext}
-            className="owl-dot"
-            onKeyUp={goNext}
-            tabIndex="0"
-          >
-            <span></span>
-          </div>
-        </div>
+          </div> 
       </div>
     </section>
+    </BackgroundImage>
   );
 };
 

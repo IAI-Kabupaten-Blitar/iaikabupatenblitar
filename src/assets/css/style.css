@@ -906,7 +906,6 @@ a:hover {
     z-index: 1;
 }
 .slider-area .single-slide-item {
-    background-color: #eee;
     background-position: center center;
     background-size: cover;
     color: #fff;
@@ -915,37 +914,7 @@ a:hover {
     z-index: 1;
     overflow: hidden;
 }
-.slider-area .single-slide-item:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 852px;
-    height: 100%;
-    top: 0;
-    left: -110px;
-    z-index: -1;
-    background-color: rgba(134, 59, 174, 0.90);
-    -webkit-transform: skew(-12deg,0deg);
-    -moz-transform: skew(-12deg,0deg);
-    -ms-transform: skew(-12deg,0deg);
-    -o-transform: skew(-12deg,0deg);
-    transform: skew(-12deg,0deg);
-}
-.slider-area .slide-bg1 {
-    background-image: url("../../images/slider1.jpg");
-}
-.slider-area .slide-bg2 {
-    background-image: url("../../images/slider2.jpg");
-}
-.slider-area .slide-bg3 {
-    background-image: url("../../images/slider3.jpg");
-}
-.slider-area .slide-bg4 {
-    background-image: url("../../images/pharmacy.jpg");
-}
-.slider-area .slide-bg5 {
-    background-image: url("../../images/slider5.jpg");
-}
+
 .slider-area .slide-item-table {
     display: table;
     width: 100%;
