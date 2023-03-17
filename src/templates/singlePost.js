@@ -12,7 +12,7 @@ const SinglePost = ({ data, pageContext }) => {
   const title = markdownRemark.frontmatter.title;
 
   return (
-    <Layout pageTitle={title}>
+    <Layout pageTitle={`IAI Kabupaten Blitar | ${title}`}>
       <NavOne />
       <PageHeader title={title} />
       <NewsSingle content={markdownRemark} next={next} prev={prev} />

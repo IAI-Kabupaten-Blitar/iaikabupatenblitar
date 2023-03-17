@@ -12,7 +12,7 @@ const EventsDetailPage = ({ data, pageContext }) => {
   const title = markdownRemark.frontmatter.title;
 
   return (
-    <Layout pageTitle={`Ikatan Apoteker Kabupaten Blitar | ${title}`}>
+    <Layout pageTitle={`IAI Kabupaten Blitar | ${title}`}>
       <NavOne />
       <PageHeader title={title} />
       <EventsDetail content={markdownRemark} next={next} prev={prev} />
