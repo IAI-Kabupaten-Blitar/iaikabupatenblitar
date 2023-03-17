@@ -35,7 +35,7 @@ export const query = graphql`
         location
         slug
         title
-	time
+        time
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1200) {

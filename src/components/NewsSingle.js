@@ -36,7 +36,8 @@ const NewsSingle = ({ content, next, prev }) => {
                 <div className="blog-inner-content-2">
                   <div
                     className="causes__text"
-                    dangerouslySetInnerHTML={{ __html: html }} />
+                    dangerouslySetInnerHTML={{ __html: html }}
+                  />
                   <nav aria-label="...">
                     <ul className="pagination justify-content-center">
                       {prev ? (
