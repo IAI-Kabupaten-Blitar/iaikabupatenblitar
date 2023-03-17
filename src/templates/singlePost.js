@@ -23,7 +23,10 @@ const SinglePost = ({ data, pageContext }) => {
 
 export const query = graphql`
   query($pathSlug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $pathSlug } }) {
+    markdownRemark(
+      fileAbsolutePath: { regex: "/posts/" }
+      frontmatter: { slug: { eq: $pathSlug } }
+    ) {
       html
       frontmatter {
         title
@@ -31,11 +34,8 @@ export const query = graphql`
         date(formatString: "DD MMMM YYYY", locale: "id_ID")
         thumbnail {
           childImageSharp {
-            id
             fluid {
-              srcSet
-              src
-              sizes
+              ...GatsbyImageSharpFluid
             }
           }
         }

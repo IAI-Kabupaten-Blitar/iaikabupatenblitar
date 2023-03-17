@@ -14,7 +14,9 @@ const News = ({ posts }) => {
               <div key={id} className="col-lg-6 col-sm-6">
                 <div className="recent-item">
                   <div className="recent__img">
-                    <span className="meta__date-date meta__date-date3">{frontmatter.date}</span>
+                    <span className="meta__date-date meta__date-date3">
+                      {frontmatter.date}
+                    </span>
 
                     <Link to={`/berita/${frontmatter.slug}`}>
                       <Img fluid={images} />
