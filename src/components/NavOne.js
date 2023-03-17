@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import logoImage from "../images/logo.png";
+import logoImage from "../images/logo-iai-kab.png";
 class NavOne extends Component {
   constructor() {
     super();
@@ -11,6 +11,13 @@ class NavOne extends Component {
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+
+    //Mobile Menu
+    this.mobileMenu();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
 
     //Mobile Menu
     this.mobileMenu();
@@ -58,12 +65,7 @@ class NavOne extends Component {
                         <li>
                           <a href="#none">
                             <i className="fa fa-envelope"></i>
-                            needhelp@oxpitan.com
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#none">
-                            <i className="fa fa-phone-square"></i>666 888 0000
+                            iaikabupatenblitar@gmail.com
                           </a>
                         </li>
                       </ul>
@@ -74,12 +76,6 @@ class NavOne extends Component {
                   <div className="top-action-content info-action-content">
                     <div className="info-box info-box-2 d-flex align-items-center justify-content-end">
                       <ul className="top-action-list d-flex align-items-center">
-                        <li className="action__text">
-                          <a href="#none">login</a>
-                        </li>
-                        <li className="action__text">
-                          <a href="#none">register</a>
-                        </li>
                         <li>
                           <a href="#none">
                             <i className="fa fa-twitter"></i>
@@ -88,11 +84,6 @@ class NavOne extends Component {
                         <li>
                           <a href="#none">
                             <i className="fa fa-facebook"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#none">
-                            <i className="fa fa-pinterest"></i>
                           </a>
                         </li>
                         <li>
@@ -118,13 +109,22 @@ class NavOne extends Component {
                   <div className="logo-action d-flex align-items-center">
                     <div className="ostion-logo">
                       <Link to="/">
-                        <img src={logoImage} alt="Oxpitan" title="Oxpitan" />
+                        <img
+                          src={logoImage}
+                          alt="IAI Kabupaten Blitar"
+                          title="Ikatan Apoteker Indonesia Kabupaten Blitar"
+                        />
                       </Link>
                     </div>
                     <div className="header-btn ml-auto">
-                      <Link to="/donate" className="theme-btn">
-                        donate now
-                      </Link>
+                      <a
+                        href="https://apoteker.or.id/#!/access/"
+                        rel="noreferrer"
+                        target="_blank"
+                        className="theme-btn"
+                      >
+                        Aplikasi SIAP
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -135,76 +135,16 @@ class NavOne extends Component {
                         <nav className="main-navigation">
                           <ul>
                             <li className="active">
-                              <Link to="/">Home</Link>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                  <Link to="/">Home 1</Link>
-                                </li>
-                                <li>
-                                  <Link to="/index2">Home 2</Link>
-                                </li>
-                              </ul>
+                              <Link to="/">Beranda</Link>
                             </li>
                             <li>
-                              <a href="#none">causes</a>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                  <Link to="/causes">causes</Link>
-                                </li>
-                                <li>
-                                  <Link to="/causes-detail">causes detail</Link>
-                                </li>
-                                <li>
-                                  <Link to="/donate">donate now</Link>
-                                </li>
-                              </ul>
+                              <Link to="/events">Kegiatan</Link>
                             </li>
                             <li>
-                              <a href="#none">events</a>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                  <Link to="/events">events</Link>
-                                </li>
-                                <li>
-                                  <Link to="/events-detail">events detail</Link>
-                                </li>
-                              </ul>
+                              <Link to="/berita">Berita</Link>
                             </li>
                             <li>
-                              <a href="#none">news</a>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                  <Link to="/news">news</Link>
-                                </li>
-                                <li>
-                                  <Link to="/single-news">news detail</Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <a href="#none">pages</a>
-                              <ul className="dropdown-menu-item">
-                                <li>
-                                  <Link to="/about">about</Link>
-                                </li>
-                                <li>
-                                  <Link to="/gallery">gallery</Link>
-                                </li>
-                                <li>
-                                  <Link to="/volunteer">
-                                    become a volunteer
-                                  </Link>
-                                </li>
-                                <li>
-                                  <Link to="/team">our team</Link>
-                                </li>
-                                <li>
-                                  <Link to="/sponsor">sponsors</Link>
-                                </li>
-                              </ul>
-                            </li>
-                            <li>
-                              <Link to="/contact">contact</Link>
+                              <Link to="/contact">Kontak</Link>
                             </li>
                           </ul>
                         </nav>
@@ -225,107 +165,27 @@ class NavOne extends Component {
             <div className="side-menu-wrap">
               <ul className="side-menu-ul">
                 <li className="sidenav__item">
-                  <a href="/">home</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to="/">Home 1</Link>
-                    </li>
-                    <li>
-                      <Link to="/index2">Home 2</Link>
-                    </li>
-                  </ul>
+                  <Link to="/">Beranda</Link>
                 </li>
                 <li className="sidenav__item">
-                  <a href="#none">causes</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to="/causes">causes</Link>
-                    </li>
-                    <li>
-                      <Link to="/causes-detail">causes detail</Link>
-                    </li>
-                    <li>
-                      <Link to="/donate">donate now</Link>
-                    </li>
-                  </ul>
+                  <Link to="/events">events</Link>
                 </li>
                 <li className="sidenav__item">
-                  <a href="#none">event</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to="/events">events</Link>
-                    </li>
-                    <li>
-                      <Link to="/events-detail">events detail</Link>
-                    </li>
-                  </ul>
+                  <Link to="/berita">Berita</Link>
                 </li>
                 <li className="sidenav__item">
-                  <a href="#none">news</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to="/news">news</Link>
-                    </li>
-                    <li>
-                      <Link to="/single-news">news detail</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="sidenav__item">
-                  <a href="#none">pages</a>
-                  <span className="menu-plus-icon"></span>
-                  <ul className="side-sub-menu">
-                    <li>
-                      <Link to="/about">about</Link>
-                    </li>
-                    <li>
-                      <Link to="/gallery">gallery</Link>
-                    </li>
-                    <li>
-                      <Link to="/volunteer">become a volunteer</Link>
-                    </li>
-                    <li>
-                      <Link to="/team">our team</Link>
-                    </li>
-                    <li>
-                      <Link to="/sponsor">sponsors</Link>
-                    </li>
-                  </ul>
-                </li>
-                <li className="sidenav__item">
-                  <Link to="/contact">contact</Link>
-                </li>
-              </ul>
-              <ul className="side-social">
-                <li>
-                  <a href="#none">
-                    <i className="fa fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <i className="fa fa-youtube-play"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#none">
-                    <i className="fa fa-google-plus"></i>
-                  </a>
+                  <Link to="/contact">Kontak</Link>
                 </li>
               </ul>
               <div className="side-btn">
-                <Link to="/donate" className="theme-btn">
-                  donate now
-                </Link>
+                <a
+                  href="https://apoteker.or.id/#!/access/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="theme-btn"
+                >
+                  Aplikasi SIAP
+                </a>
               </div>
             </div>
           </div>

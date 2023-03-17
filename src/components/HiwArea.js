@@ -1,9 +1,34 @@
 import React from "react";
-import hlwImage1 from "../images/hiw-img.jpg";
-import hlwImage2 from "../images/hiw-img2.jpg";
-import hlwImage3 from "../images/hiw-img3.jpg";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 const HiwArea = () => {
+  const { Simona, Siap, Sipnap } = useStaticQuery(graphql`
+    {
+      Simona: file(relativePath: { eq: "simona.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      Siap: file(relativePath: { eq: "siap.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      Sipnap: file(relativePath: { eq: "sipnap.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <section className="hiw-area">
       <div className="container">
@@ -12,11 +37,16 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg1">
                 <figure>
-                  <img src={hlwImage1} alt="" />
-                  <h3 className="hiw-title">More charity better lives</h3>
+                  <Img fluid={Simona.childImageSharp.fluid} />
+                  <h3 className="hiw-title">SIMONA Kemkes</h3>
                   <div className="hiw-btn-box">
-                    <a href="/events" className="theme-btn">
-                      read more
+                    <a
+                      href="https://simona.kemkes.go.id/simona_Login/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn"
+                    >
+                      Daftar / Masuk
                     </a>
                   </div>
                 </figure>
@@ -27,11 +57,16 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg2">
                 <figure>
-                  <img src={hlwImage2} alt="" />
-                  <h3 className="hiw-title">How to become volunteer</h3>
+                  <Img fluid={Siap.childImageSharp.fluid} />
+                  <h3 className="hiw-title">WEBINAR IAI</h3>
                   <div className="hiw-btn-box">
-                    <a href="/volunteer" className="theme-btn">
-                      read more
+                    <a
+                      href="https://p2ab.net/#!/cpd/login"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn"
+                    >
+                      Ikuti Webinar IAI
                     </a>
                   </div>
                 </figure>
@@ -42,11 +77,16 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg3">
                 <figure>
-                  <img src={hlwImage3} alt="" />
-                  <h3 className="hiw-title">Poor children education</h3>
+                  <Img fluid={Sipnap.childImageSharp.fluid} />
+                  <h3 className="hiw-title">Lapor SIPNAP</h3>
                   <div className="hiw-btn-box">
-                    <a href="/donate" className="theme-btn">
-                      read more
+                    <a
+                      href="https://sipnap.kemkes.go.id/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn"
+                    >
+                      Lapor SIPNAP
                     </a>
                   </div>
                 </figure>

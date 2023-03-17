@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Layout from "../components/Layout";
 import NavTwo from "../components/NavTwo";
 import Footer from "../components/Footer";
@@ -17,25 +17,25 @@ import VolunteerArea from "../components/VolunteerArea";
 import CallToActionThree from "../components/CallToActionThree";
 
 const HomePageTwo = () => {
-    return (
-        <Layout pageTitle="Oxpitan | Home 2">
-            <NavTwo />
-            <SliderTwo />
-            <GiveArea />
-            <MakeWorldArea />
-            <ClientsLogo />
-            <DonateArea />
-            <MixerAreaThree />
-            <CausesArea />
-            <CategoryArea />
-            <GalleryCarousel />
-            <Pricing />
-            <EventsHome />
-            <VolunteerArea />
-            <CallToActionThree />
-            <Footer />
-        </Layout>
-    );
+  return (
+    <Layout pageTitle="Oxpitan | Home 2">
+      <NavTwo />
+      <SliderTwo />
+      <GiveArea />
+      <MakeWorldArea />
+      <ClientsLogo />
+      <DonateArea />
+      <MixerAreaThree />
+      <CausesArea />
+      <CategoryArea />
+      <GalleryCarousel />
+      <Pricing />
+      <EventsHome />
+      <VolunteerArea />
+      <CallToActionThree />
+      <Footer />
+    </Layout>
+  );
 };
 
 export default HomePageTwo;

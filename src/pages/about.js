@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -11,19 +11,19 @@ import ClientsLogoTwo from "../components/ClientsLogoTwo";
 import Footer from "../components/Footer";
 
 const AboutPage = () => {
-    return (
-        <Layout pageTitle="Oxpitan | About">
-            <NavOne />
-            <PageHeader title="About" />
-            <AboutArea />
-            <MixerAreaTwo />
-            <TeamArea />
-            <FaqArea />
-            <ServiceArea />
-            <ClientsLogoTwo />
-            <Footer />
-        </Layout>
-    );
+  return (
+    <Layout pageTitle="Oxpitan | About">
+      <NavOne />
+      <PageHeader title="About" />
+      <AboutArea />
+      <MixerAreaTwo />
+      <TeamArea />
+      <FaqArea />
+      <ServiceArea />
+      <ClientsLogoTwo />
+      <Footer />
+    </Layout>
+  );
 };
 
 export default AboutPage;
