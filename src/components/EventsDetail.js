@@ -42,12 +42,14 @@ const EventsDetail = ({ content, next, prev }) => {
               <div className="event-detail-item">
                 <h3 className="event__title">Detail Kegiatan</h3>
                 <ul className="event__list">
+                  {frontmatter.time && (
+                    <li>
+                      <span>Waktu:</span>
+                      {frontmatter.time}
+                    </li>
+                  )}
                   <li>
-                    <span>Waktu:</span>
-                    {frontmatter.time}
-                  </li>
-                  <li>
-                    <span>Date:</span>
+                    <span>Tanggal:</span>
                     {date.format("DD MMMM YYYY")} ({date.fromNow()})
                   </li>
                   {frontmatter.contacts.length > 0 && (
@@ -55,7 +57,7 @@ const EventsDetail = ({ content, next, prev }) => {
                       {frontmatter.contacts.map(contact => {
                         return (
                           <div>
-                            <span>Phone:</span>
+                            <span>Kontak:</span>
                             {contact}
                           </div>
                         );
@@ -63,7 +65,7 @@ const EventsDetail = ({ content, next, prev }) => {
                     </li>
                   )}
                   <li>
-                    <span>Location:</span>
+                    <span>Lokasi:</span>
                     {frontmatter.location}
                   </li>
                 </ul>
