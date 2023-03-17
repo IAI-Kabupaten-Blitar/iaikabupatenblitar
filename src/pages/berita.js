@@ -21,7 +21,7 @@ const NewsPage = ({ data }) => {
 export const query = graphql`
   query NewsPageQuery {
     allMarkdownRemark(
-      sort: { order: ASC, fields: [frontmatter___date] }
+      sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/posts/" } }
     ) {
       edges {
