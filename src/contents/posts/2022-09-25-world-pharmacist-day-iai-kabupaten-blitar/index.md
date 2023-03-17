@@ -3,7 +3,7 @@ slug: "world-pharmacist-day-iai-kabupaten-blitar"
 date: "2022-09-25"
 title: "World Pharmacist Day 2022 PC IAI Kabupaten Blitar"
 author: "Taufan Rezzafri"
-thumbnail: "pharmacy.jpg"
+thumbnail: "wpd-2022.jpg"
 ---
 
 Pada tanggal 25 September 2022, bertepatan dengan Hari Farmasi Sedunia atau World Pharmacist Day, anggota Ikatan Apoteker Indonesia (IAI) Pengurus Cabang Kabupaten Blitar melakukan kegiatan di tiga lokasi berbeda, yaitu **Pantai Serang**, **_Camp_** **Hutan Loji Kabupaten Blitar**, dan **Area Kantor Kabupaten Blitar**. Kegiatan yang dilakukan oleh anggota IAI Kabupaten Blitar diantaranya adalah memberikan informasi kesehatan kepada masyarakat terutama mengenai diabetes, melakukan pengukuran tekanan darah, kadar gula darah, asam urat dan kolesterol secara gratis.
