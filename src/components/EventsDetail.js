@@ -4,7 +4,6 @@ import moment from "moment";
 import "moment/locale/id";
 
 const EventsDetail = ({ content, next, prev }) => {
-  console.log(content);
   const { frontmatter, html } = content;
   const image = frontmatter.thumbnail.childImageSharp.fluid;
   const title = frontmatter.title;
