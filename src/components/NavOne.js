@@ -165,7 +165,7 @@ class NavOne extends Component {
                   <Link to="/">Beranda</Link>
                 </li>
                 <li className="sidenav__item">
-                  <Link to="/events">events</Link>
+                  <Link to="/kegiatan">Kegiatan</Link>
                 </li>
                 <li className="sidenav__item">
                   <Link to="/berita">Berita</Link>
