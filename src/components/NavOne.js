@@ -77,17 +77,20 @@ class NavOne extends Component {
                     <div className="info-box info-box-2 d-flex align-items-center justify-content-end">
                       <ul className="top-action-list d-flex align-items-center">
                         <li>
-                          <a href="#none">
-                            <i className="fa fa-twitter"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="#none">
+                          <a
+                            href="https://www.facebook.com/groups/apotekerblitar/"
+                            rel="noreferrer"
+                            target="_blank"
+                          >
                             <i className="fa fa-facebook"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="#none">
+                          <a
+                            href="https://www.instagram.com/iai.blitarkabofficial/"
+                            rel="noreferrer"
+                            target="_blank"
+                          >
                             <i className="fa fa-instagram"></i>
                           </a>
                         </li>
