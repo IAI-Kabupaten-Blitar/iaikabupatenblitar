@@ -1,7 +1,15 @@
 import React from "react";
-import Map from "./Map";
-import blogImage from "../images/img19.jpg";
-const EventsDetail = () => {
+import Img from 'gatsby-image';
+import moment from "moment";
+import "moment/locale/id";
+
+const EventsDetail = ({ content, next, prev }) => {
+  console.log(content)
+  const { frontmatter, html } = content
+  const image = frontmatter.thumbnail.childImageSharp.fluid
+  const title = frontmatter.title
+  const date = moment(frontmatter.date);
+
   return (
     <section className="event-detail-area">
       <div className="container">
@@ -10,10 +18,10 @@ const EventsDetail = () => {
             <div className="blog-content">
               <div className="blog-item">
                 <div className="blog-img">
-                  <img src={blogImage} alt="" />
+                  <Img fluid={image}/>
                   <span className="blog__tag">
-                    <span className="date__num-text">9</span>
-                    <span className="date__mon-text">mar</span>
+                    <span className="date__num-text">{date.format("DD")}</span>
+                    <span className="date__mon-text">{date.format("MMMM")}</span>
                   </span>
                 </div>
               </div>
@@ -22,81 +30,33 @@ const EventsDetail = () => {
           <div className="col-lg-8">
             <div className="event-detail-content">
               <div className="event-detail-item">
-                <h3 className="event__title">Play for the world</h3>
-                <p className="event__text">
-                  There are many variations of passages of Lorem Ipsum
-                  available, but the majority have suffered alteration in some
-                  form, by injected humour, or randomised words which don't look
-                  even slightly believable. If you are going to use a passage of
-                  Lorem Ipsum, you need to be sure there isn't anything
-                  embarrassing hidden in the middle of text.
-                </p>
-                <p className="event__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum ley of
-                  type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-              <div className="event-detail-item">
-                <h3 className="event__title event__title2">
-                  Event Requirements
-                </h3>
-                <p className="event__text">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum ley of
-                  type and scrambled it to make a type specimen book.
-                </p>
-              </div>
-              <div className="event-detail-btn">
-                <a href="#none" className="theme-btn">
-                  register now
-                </a>
+                <h3 className="event__title">{title}</h3>
+	  	<div dangerouslySetInnerHTML={{__html: html}} />
               </div>
             </div>
           </div>
           <div className="col-lg-4">
             <div className="event-detail-sidebar">
               <div className="event-detail-item">
-                <h3 className="event__title">Event Details</h3>
+                <h3 className="event__title">Detail Kegiatan</h3>
                 <ul className="event__list">
                   <li>
-                    <span>Starting Time:</span> 8:00AM to 2:00PM
+                    <span>Waktu:</span>{frontmatter.time}
                   </li>
                   <li>
-                    <span>Date:</span>9 March, 2019
+                    <span>Date:</span>{date.format("DD MMMM YYYY")} ({date.fromNow()})
                   </li>
-                  <li>
-                    <span>Category:</span>Health
+	  	  { frontmatter.contacts.length > 0 && 
+	          <li>
+	  	  { frontmatter.contacts.map(contact => {
+                      return (<div><span>Phone:</span>{contact}</div>)
+		  })}
                   </li>
+		  }
                   <li>
-                    <span>Phone:</span>666 888 0000
-                  </li>
-                  <li>
-                    <span>Website:</span>Info@event.com
-                  </li>
-                  <li>
-                    <span>Location:</span>8 Street, San Marcos London D29, UK
+                    <span>Location:</span>{frontmatter.location}
                   </li>
                 </ul>
-              </div>
-              <div className="event-detail-item event-detail-item2">
-                <Map />
               </div>
             </div>
           </div>

@@ -2778,6 +2778,10 @@ a:hover {
     line-height: 30px;
     margin-bottom: 30px;
 }
+.event-detail-area .event-detail-content .causes__text {
+    line-height: 30px;
+    margin-bottom: 30px;
+}
 .event-detail-area .event-detail-content .event__title2 {
     font-size: 26px;
     font-weight: 600;

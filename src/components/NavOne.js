@@ -138,7 +138,7 @@ class NavOne extends Component {
                               <Link to="/">Beranda</Link>
                             </li>
                             <li>
-                              <Link to="/events">Kegiatan</Link>
+                              <Link to="/kegiatan">Kegiatan</Link>
                             </li>
                             <li>
                               <Link to="/berita">Berita</Link>
