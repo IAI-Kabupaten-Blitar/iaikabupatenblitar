@@ -143,9 +143,6 @@ class NavOne extends Component {
                             <li>
                               <Link to="/berita">Berita</Link>
                             </li>
-                            <li>
-                              <Link to="/contact">Kontak</Link>
-                            </li>
                           </ul>
                         </nav>
                       </div>
@@ -172,9 +169,6 @@ class NavOne extends Component {
                 </li>
                 <li className="sidenav__item">
                   <Link to="/berita">Berita</Link>
-                </li>
-                <li className="sidenav__item">
-                  <Link to="/contact">Kontak</Link>
                 </li>
               </ul>
               <div className="side-btn">
