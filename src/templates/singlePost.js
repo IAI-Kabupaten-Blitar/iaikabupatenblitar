@@ -24,7 +24,7 @@ const SinglePost = ({ data, pageContext }) => {
     width,
     height,
   } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
-  const url = `${siteUrl}/${src}`;
+  const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/berita/${pathSlug}`;
   return (
     <Layout pageTitle={title} pageDescription={excerpt} canonical={canonical}>

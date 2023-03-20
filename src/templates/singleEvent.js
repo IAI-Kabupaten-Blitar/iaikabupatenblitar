@@ -24,7 +24,7 @@ const EventsDetailPage = ({ data, pageContext }) => {
     width,
     height,
   } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
-  const url = `${siteUrl}/${src}`;
+  const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/kegiatan/${pathSlug}`;
   return (
     <Layout
