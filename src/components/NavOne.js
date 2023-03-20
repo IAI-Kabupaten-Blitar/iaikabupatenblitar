@@ -63,9 +63,9 @@ class NavOne extends Component {
                     <div className="info-box info-box-1 d-flex align-items-center">
                       <ul className="d-flex align-items-center">
                         <li>
-                          <a href="#none">
+                          <a href="mailto:iai.blitarkab@gmail.com">
                             <i className="fa fa-envelope"></i>
-                            iaikabupatenblitar@gmail.com
+                            iai.blitarkab@gmail.com
                           </a>
                         </li>
                       </ul>
