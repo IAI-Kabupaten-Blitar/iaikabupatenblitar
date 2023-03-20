@@ -39,14 +39,15 @@ const Layout = props => {
   const theDescription = props.pageDescription
     ? props.pageDescription
     : description;
+  const theCanonical = props.canonical ? props.canonical : siteUrl;
   return (
     <Fragment>
       <GatsbySeo
         title={theTitle}
         description={theDescription}
-        canonical={siteUrl}
+        canonical={theCanonical}
         openGraph={{
-          url: siteUrl,
+          url: theCanonical,
           title: theTitle,
           description: theDescription,
           images: [

@@ -8,15 +8,22 @@ import Footer from "../components/Footer";
 import News from "../components/News";
 
 const NewsPage = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
+  const {
+    allMarkdownRemark: { edges },
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
+  const canonical = `${siteUrl}/berita`;
   return (
     <Layout
       pageTitle="Berita"
       pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
+      canonical={canonical}
     >
       <GatsbySeo
         openGraph={{
-          url: "https://www.iaikabupatenblitar.or.id/berita",
+          url: canonical,
         }}
       />
       <NavOne />
@@ -56,6 +63,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
       }
     }
   }

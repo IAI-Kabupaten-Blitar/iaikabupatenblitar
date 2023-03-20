@@ -24,12 +24,16 @@ const EventsDetailPage = ({ data, pageContext }) => {
     width,
     height,
   } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
-  const url = `${siteUrl}${src}`;
+  const url = `${siteUrl}/${src}`;
+  const canonical = `${siteUrl}/kegiatan/${pathSlug}`;
   return (
-    <Layout pageTitle={`Kegiatan: ${title}`} pageDescription={excerpt}>
+    <Layout
+      pageTitle={`Kegiatan: ${title}`}
+      pageDescription={excerpt}
+      canonical={canonical}
+    >
       <GatsbySeo
         openGraph={{
-          url: `${siteUrl}${pathSlug}`,
           title,
           description: excerpt,
           images: [

@@ -8,15 +8,22 @@ import Footer from "../components/Footer";
 import Events from "../components/Events";
 
 const EventsPage = ({ data }) => {
-  const { edges } = data.allMarkdownRemark;
+  const {
+    allMarkdownRemark: { edges },
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
+  const canonical = `${siteUrl}/kegiatan`;
   return (
     <Layout
       pageTitle="Kegiatan"
       pageDescription="Kegiatan-kegiatan Ikatan Apoteker Indonesia Kabupaten Blitar"
+      canonical={canonical}
     >
       <GatsbySeo
         openGraph={{
-          url: "https://www.iaikabupatenblitar.or.id/kegiatan",
+          url: canonical,
         }}
       />
       <NavOne />
@@ -52,6 +59,12 @@ export const query = graphql`
             }
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
+        siteUrl
       }
     }
   }
