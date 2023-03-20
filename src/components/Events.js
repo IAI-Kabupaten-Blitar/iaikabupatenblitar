@@ -18,21 +18,23 @@ const Events = ({ events }) => {
               <div key={id} className="col-lg-6">
                 <div className="blog-content">
                   <div className="blog-item blog-item1">
-                    <div className="blog-img">
-                      <Img fluid={images} />
-                      <span className="blog__tag blog__tag1">
-                        <span className="date__num-text">
-                          {date.format("DD")}
+                    <Link to={`/kegiatan/${frontmatter.slug}`}>
+                      <div className="blog-img">
+                        <Img fluid={images} />
+                        <span className="blog__tag blog__tag1">
+                          <span className="date__num-text">
+                            {date.format("DD")}
+                          </span>
+                          <span className="date__mon-text">
+                            {date.format("MMMM")}
+                          </span>
+                          <span className="date__mon-text">
+                            {date.format("YYYY")}
+                          </span>
+                          <span className="date__mon-text"></span>
                         </span>
-                        <span className="date__mon-text">
-                          {date.format("MMMM")}
-                        </span>
-                        <span className="date__mon-text">
-                          {date.format("YYYY")}
-                        </span>
-                        <span className="date__mon-text"></span>
-                      </span>
-                    </div>
+                      </div>
+                    </Link>
                     <div className="blog-inner-content">
                       <h3 className="blog__title">
                         <Link to={`/kegiatan/${frontmatter.slug}`}>
