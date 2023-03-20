@@ -18,14 +18,16 @@ const EventsDetail = ({ content, next, prev }) => {
               <div className="blog-item">
                 <div className="blog-img">
                   <Img fluid={image} />
-	          {date && (
-                  <span className="blog__tag">
-                    <span className="date__num-text">{date.format("DD")}</span>
-                    <span className="date__mon-text">
-                      {date.format("MMMM")}
+                  {date && (
+                    <span className="blog__tag">
+                      <span className="date__num-text">
+                        {date.format("DD")}
+                      </span>
+                      <span className="date__mon-text">
+                        {date.format("MMMM")}
+                      </span>
                     </span>
-                  </span>
-		  )}
+                  )}
                 </div>
               </div>
             </div>
@@ -49,12 +51,12 @@ const EventsDetail = ({ content, next, prev }) => {
                       {frontmatter.time}
                     </li>
                   )}
-	          {date && (
-                  <li>
-                    <span>Tanggal:</span>
-                    {date.format("DD MMMM YYYY")} ({date.fromNow()})
-                  </li>
-		  )}
+                  {date && (
+                    <li>
+                      <span>Tanggal:</span>
+                      {date.format("DD MMMM YYYY")} ({date.fromNow()})
+                    </li>
+                  )}
                   {frontmatter.contacts.length > 0 && (
                     <li>
                       {frontmatter.contacts.map(contact => {
@@ -68,11 +70,11 @@ const EventsDetail = ({ content, next, prev }) => {
                     </li>
                   )}
                   {frontmatter.location && (
-                  <li>
-                    <span>Lokasi:</span>
-                    {frontmatter.location}
-                  </li>
-		  )}
+                    <li>
+                      <span>Lokasi:</span>
+                      {frontmatter.location}
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>
