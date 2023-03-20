@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Ikatan Apoteker Indonesia - Pengurus Cabang Kabupaten Blitar`,
+    title: `Ikatan Apoteker Indonesia Kabupaten Blitar`,
     description: `Website resmi Ikatan Apoteker Indonesia Pengurus Cabang Kabupaten Blitar. Kami berkomitmen untuk meningkatkan kualitas pelayanan kefarmasian dan kesehatan di Kabupaten Blitar.`,
     keywords: [
       "IAI Kabupaten Blitar",
@@ -10,7 +10,7 @@ module.exports = {
       "farmasi",
       "pelayanan kesehatan",
     ],
-    siteUrl: "https://iaikabupatenblitar.or.id/",
+    siteUrl: "https://www.iaikabupatenblitar.or.id/",
     author: `@rezzafri_apt`,
   },
   plugins: [
@@ -20,13 +20,25 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Website Ikatan APoteker Indonesia Kabupaten `,
+        name: `Ikatan Apoteker Indonesia Kabupaten Blitar`,
         short_name: `iaikabupatenblitar`,
         start_url: `/`,
         background_color: `#e36955`,
         theme_color: `#e36955`,
         display: `browser`,
         icon: `src/images/logo-iai-blitar.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-next-seo`,
+      options: {
+        openGraph: {
+          type: `website`,
+          locale: `id_ID`,
+          url: `https://www.iaikabupatenblitar.or.id/`,
+          canonical: `https://iaikabupatenblitar.or.id/`,
+          site_name: `Ikatan Apoteker Indonesia Kabupaten Blitar`,
+        },
       },
     },
     {
