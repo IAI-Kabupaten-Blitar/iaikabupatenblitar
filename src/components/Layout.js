@@ -15,6 +15,7 @@ const Layout = props => {
         siteMetadata {
           title
           description
+          siteUrl
         }
       }
       OgImage: file(
@@ -27,12 +28,13 @@ const Layout = props => {
       }
     }
   `);
-  const { title, description } = MetaData.siteMetadata;
+  const { title, description, siteUrl } = MetaData.siteMetadata;
   const {
     src,
     width,
     height,
   } = OgImage.childImageSharp.gatsbyImageData.images.fallback;
+  const url = `${siteUrl}${src}`;
   const theTitle = props.pageTitle ? `${props.pageTitle} | ${title}` : title;
   const theDescription = props.pageDescription
     ? props.pageDescription
@@ -42,14 +44,14 @@ const Layout = props => {
       <GatsbySeo
         title={theTitle}
         description={theDescription}
-        canonical="https://www.iaikabupatenblitar.or.id/"
+        canonical={siteUrl}
         openGraph={{
-          url: "https://www.iaikabupatenblitar.or.id/",
+          url: siteUrl,
           title: theTitle,
           description: theDescription,
           images: [
             {
-              url: src,
+              url,
               width,
               height,
               alt: title,

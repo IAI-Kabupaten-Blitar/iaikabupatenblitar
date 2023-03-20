@@ -8,7 +8,12 @@ import Footer from "../components/Footer";
 import NewsSingle from "../components/NewsSingle";
 
 const SinglePost = ({ data, pageContext }) => {
-  const { markdownRemark } = data;
+  const {
+    markdownRemark,
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
   const { prev, next, pathSlug } = pageContext;
   const {
     frontmatter: { title },
@@ -19,17 +24,18 @@ const SinglePost = ({ data, pageContext }) => {
     width,
     height,
   } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
-
+  const url = `${siteUrl}${src}`;
+  console.log(url);
   return (
     <Layout pageTitle={title} pageDescription={excerpt}>
       <GatsbySeo
         openGraph={{
-          url: `https://www.iaikabupatenblitar.or.id/berita/${pathSlug}`,
+          url: `${siteUrl}${pathSlug}`,
           title,
           description: excerpt,
           images: [
             {
-              url: src,
+              url,
               width,
               height,
               alt: title,
@@ -65,6 +71,11 @@ export const query = graphql`
             gatsbyImageData(layout: FIXED)
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }

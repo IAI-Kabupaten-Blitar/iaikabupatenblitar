@@ -8,7 +8,12 @@ import Footer from "../components/Footer";
 import EventsDetail from "../components/EventsDetail";
 
 const EventsDetailPage = ({ data, pageContext }) => {
-  const { markdownRemark } = data;
+  const {
+    markdownRemark,
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
   const { prev, next, pathSlug } = pageContext;
   const {
     frontmatter: { title },
@@ -19,17 +24,17 @@ const EventsDetailPage = ({ data, pageContext }) => {
     width,
     height,
   } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
-
+  const url = `${siteUrl}${src}`;
   return (
     <Layout pageTitle={`Kegiatan: ${title}`} pageDescription={excerpt}>
       <GatsbySeo
         openGraph={{
-          url: `https://www.iaikabupatenblitar.or.id/kegiatan/${pathSlug}`,
+          url: `${siteUrl}${pathSlug}`,
           title,
           description: excerpt,
           images: [
             {
-              url: src,
+              url,
               width,
               height,
               alt: title,
@@ -69,6 +74,11 @@ export const query = graphql`
             gatsbyImageData(layout: FIXED)
           }
         }
+      }
+    }
+    site {
+      siteMetadata {
+        siteUrl
       }
     }
   }
