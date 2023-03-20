@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -8,11 +9,34 @@ import NewsSingle from "../components/NewsSingle";
 
 const SinglePost = ({ data, pageContext }) => {
   const { markdownRemark } = data;
-  const { prev, next } = pageContext;
-  const title = markdownRemark.frontmatter.title;
+  const { prev, next, pathSlug } = pageContext;
+  const {
+    frontmatter: { title },
+    excerpt,
+  } = markdownRemark;
+  const {
+    src,
+    width,
+    height,
+  } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
 
   return (
-    <Layout pageTitle={`IAI Kabupaten Blitar | ${title}`}>
+    <Layout pageTitle={title} pageDescription={excerpt}>
+      <GatsbySeo
+        openGraph={{
+          url: `https://www.iaikabupatenblitar.or.id/berita/${pathSlug}`,
+          title,
+          description: excerpt,
+          images: [
+            {
+              url: src,
+              width,
+              height,
+              alt: title,
+            },
+          ],
+        }}
+      />
       <NavOne />
       <PageHeader title={title} />
       <NewsSingle content={markdownRemark} next={next} prev={prev} />
@@ -28,6 +52,7 @@ export const query = graphql`
       frontmatter: { slug: { eq: $pathSlug } }
     ) {
       html
+      excerpt(format: PLAIN)
       frontmatter {
         title
         author
@@ -37,6 +62,7 @@ export const query = graphql`
             fluid {
               ...GatsbyImageSharpFluid
             }
+            gatsbyImageData(layout: FIXED)
           }
         }
       }

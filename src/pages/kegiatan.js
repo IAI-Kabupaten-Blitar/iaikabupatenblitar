@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -9,7 +10,15 @@ import Events from "../components/Events";
 const EventsPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout pageTitle="IAI Kabupaten Blitar | Kegiatan">
+    <Layout
+      pageTitle="Kegiatan"
+      pageDescription="Kegiatan-kegiatan Ikatan Apoteker Indonesia Kabupaten Blitar"
+    >
+      <GatsbySeo
+        openGraph={{
+          url: "https://www.iaikabupatenblitar.or.id/kegiatan",
+        }}
+      />
       <NavOne />
       <PageHeader title="Kegiatan" />
       <Events events={edges} />

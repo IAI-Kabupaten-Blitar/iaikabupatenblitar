@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import { GatsbySeo } from "gatsby-plugin-next-seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -9,7 +10,15 @@ import News from "../components/News";
 const NewsPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   return (
-    <Layout pageTitle="IAI Kabupaten Blitar | Berita">
+    <Layout
+      pageTitle="Berita"
+      pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
+    >
+      <GatsbySeo
+        openGraph={{
+          url: "https://www.iaikabupatenblitar.or.id/berita",
+        }}
+      />
       <NavOne />
       <PageHeader title="Berita" />
       <News posts={edges} />
@@ -19,7 +28,7 @@ const NewsPage = ({ data }) => {
 };
 
 export const query = graphql`
-  query NewsPageQuery {
+  query {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
       filter: { fileAbsolutePath: { regex: "/posts/" } }
@@ -27,6 +36,7 @@ export const query = graphql`
       edges {
         node {
           id
+          excerpt(format: PLAIN)
           frontmatter {
             author
             date(formatString: "DD MMMM YYYY", locale: "id_ID")
@@ -40,8 +50,12 @@ export const query = graphql`
               }
             }
           }
-          excerpt(format: PLAIN)
         }
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }

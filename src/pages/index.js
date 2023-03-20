@@ -7,7 +7,7 @@ import SliderTwo from "../components/SliderTwo";
 
 const HomePage = () => {
   return (
-    <Layout pageTitle="IAI Kabupaten Blitar - Website Resmi Ikatan Apoteker Kabupaten Blitar">
+    <Layout>
       <NavOne />
       <SliderTwo />
       <HiwArea />
