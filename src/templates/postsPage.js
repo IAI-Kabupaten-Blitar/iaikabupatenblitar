@@ -5,20 +5,22 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-import Events from "../components/Events";
+import News from "../components/News";
+import Pagination from "../components/Pagination";
 
-const EventsPage = ({ data }) => {
+const postsPage = ({ data, pageContext }) => {
   const {
     allMarkdownRemark: { edges },
     site: {
       siteMetadata: { siteUrl },
     },
   } = data;
-  const canonical = `${siteUrl}/kegiatan`;
+  const { currentPage, numPages } = pageContext;
+  const canonical = `${siteUrl}/berita`;
   return (
     <Layout
-      pageTitle="Kegiatan"
-      pageDescription="Kegiatan-kegiatan Ikatan Apoteker Indonesia Kabupaten Blitar"
+      pageTitle="Berita"
+      pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
       canonical={canonical}
     >
       <GatsbySeo
@@ -27,27 +29,29 @@ const EventsPage = ({ data }) => {
         }}
       />
       <NavOne />
-      <PageHeader title="Kegiatan" />
-      <Events events={edges} />
+      <PageHeader title="Berita" />
+      <News posts={edges} />
+      <Pagination currentPage={currentPage} numPages={numPages} slug="berita" />
       <Footer />
     </Layout>
   );
 };
 
 export const query = graphql`
-  {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { fileAbsolutePath: { regex: "/events/" } }
+      filter: { fileAbsolutePath: { regex: "/posts/" } }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
           id
+          excerpt(format: PLAIN)
           frontmatter {
-            contacts
-            coordinate
-            date
-            location
+            author
+            date(formatString: "DD MMMM YYYY", locale: "id_ID")
             slug
             title
             thumbnail {
@@ -70,4 +74,4 @@ export const query = graphql`
   }
 `;
 
-export default EventsPage;
+export default postsPage;

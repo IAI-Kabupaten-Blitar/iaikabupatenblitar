@@ -7,7 +7,7 @@ import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import NewsSingle from "../components/NewsSingle";
 
-const SinglePost = ({ data, pageContext }) => {
+const singlePost = ({ data, pageContext }) => {
   const {
     markdownRemark,
     site: {
@@ -80,4 +80,4 @@ export const query = graphql`
   }
 `;
 
-export default SinglePost;
+export default singlePost;

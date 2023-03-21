@@ -5,20 +5,22 @@ import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
-import News from "../components/News";
+import Events from "../components/Events";
+import Pagination from "../components/Pagination";
 
-const NewsPage = ({ data }) => {
+const eventsPage = ({ data, pageContext }) => {
   const {
     allMarkdownRemark: { edges },
     site: {
       siteMetadata: { siteUrl },
     },
   } = data;
-  const canonical = `${siteUrl}/berita`;
+  const { currentPage, numPages } = pageContext;
+  const canonical = `${siteUrl}/kegiatan`;
   return (
     <Layout
-      pageTitle="Berita"
-      pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
+      pageTitle="Kegiatan"
+      pageDescription="Kegiatan-kegiatan Ikatan Apoteker Indonesia Kabupaten Blitar"
       canonical={canonical}
     >
       <GatsbySeo
@@ -27,26 +29,34 @@ const NewsPage = ({ data }) => {
         }}
       />
       <NavOne />
-      <PageHeader title="Berita" />
-      <News posts={edges} />
+      <PageHeader title="Kegiatan" />
+      <Events events={edges} />
+      <Pagination
+        currentPage={currentPage}
+        numPages={numPages}
+        slug="kegiatan"
+      />
       <Footer />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query {
+  query($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { fileAbsolutePath: { regex: "/posts/" } }
+      filter: { fileAbsolutePath: { regex: "/events/" } }
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
           id
-          excerpt(format: PLAIN)
           frontmatter {
-            author
-            date(formatString: "DD MMMM YYYY", locale: "id_ID")
+            contacts
+            coordinate
+            date
+            location
             slug
             title
             thumbnail {
@@ -69,4 +79,4 @@ export const query = graphql`
   }
 `;
 
-export default NewsPage;
+export default eventsPage;

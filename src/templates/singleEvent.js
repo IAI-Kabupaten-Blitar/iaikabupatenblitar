@@ -7,7 +7,7 @@ import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 import EventsDetail from "../components/EventsDetail";
 
-const EventsDetailPage = ({ data, pageContext }) => {
+const singleEvent = ({ data, pageContext }) => {
   const {
     markdownRemark,
     site: {
@@ -88,4 +88,4 @@ export const query = graphql`
   }
 `;
 
-export default EventsDetailPage;
+export default singleEvent;

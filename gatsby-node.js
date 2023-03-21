@@ -5,7 +5,9 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve("src/templates/singlePost.js");
+    const postsPageTemplate = path.resolve("src/templates/postsPage.js");
     const eventTemplate = path.resolve("src/templates/singleEvent.js");
+    const eventsPageTemplate = path.resolve("src/templates/eventsPage.js");
 
     resolve(
       graphql(
@@ -40,9 +42,26 @@ exports.createPages = ({ graphql, actions }) => {
           }
         `
       ).then(result => {
+        // Posts
         const posts = result.data.Posts.edges;
-        const events = result.data.Events.edges;
+        const postsPerPage = 6;
+        const numPages = Math.ceil(posts.length / postsPerPage);
 
+        // Berita list page
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/berita` : `/berita/${i + 1}`,
+            component: postsPageTemplate,
+            context: {
+              limit: postsPerPage,
+              skip: i * postsPerPage,
+              numPages,
+              currentPage: i + 1,
+            },
+          });
+        });
+
+        // Single Berita page
         posts.forEach(({ node }, index) => {
           const slug = node.frontmatter.slug;
           createPage({
@@ -57,6 +76,26 @@ exports.createPages = ({ graphql, actions }) => {
           resolve();
         });
 
+        // Events
+        const events = result.data.Events.edges;
+        const eventsPerPage = 4;
+        const eventsNumPages = Math.ceil(events.length / eventsPerPage);
+
+        // Kegiatan list page
+        Array.from({ length: eventsNumPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? `/kegiatan` : `/kegiatan/${i + 1}`,
+            component: eventsPageTemplate,
+            context: {
+              limit: eventsPerPage,
+              skip: i * eventsPerPage,
+              numPages: eventsNumPages,
+              currentPage: i + 1,
+            },
+          });
+        });
+
+        // Single Kegiatan page
         events.forEach(({ node }, index) => {
           const slug = node.frontmatter.slug;
           createPage({
