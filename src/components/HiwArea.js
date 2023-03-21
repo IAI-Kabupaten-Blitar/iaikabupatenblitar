@@ -30,8 +30,18 @@ const HiwArea = () => {
   `);
 
   return (
-    <section className="hiw-area">
+    <section className="hiw-area pt-0 pb-5">
       <div className="container">
+        <div className="row">
+          <div className="col-lg-8 mx-auto text-center">
+            <div className="section-heading blog-heading mb-5">
+              <h2 className="section__title">Aplikasi</h2>
+              <p class="section__meta">
+                website aplikasi pendukung praktek kefarmasian
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="row">
           <div className="col">
             <div className="hiw-item">
