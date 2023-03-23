@@ -93,6 +93,7 @@ module.exports = {
               maxWidth: 590,
             },
           },
+          `gatsby-plugin-qrcode`,
         ],
       },
     },

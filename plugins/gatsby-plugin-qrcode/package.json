@@ -1,0 +1,19 @@
+{
+  "name": "gatsby-plugin-qrcode",
+  "version": "1.0.0",
+  "description": "Add qrcode from MarkdownRemark field.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"No build script setup\""
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin"
+  ],
+  "author": "Taufan Rezzafri <rezzafri@gmail.com>",
+  "license": "0BSD",
+  "dependencies": {
+    "qrcode": "^1.5.1"
+  }
+}

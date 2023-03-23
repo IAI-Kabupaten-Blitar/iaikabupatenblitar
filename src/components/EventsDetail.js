@@ -8,6 +8,8 @@ const EventsDetail = ({ content, next, prev }) => {
   const image = frontmatter.thumbnail.childImageSharp.fluid;
   const title = frontmatter.title;
   const date = moment(frontmatter.date);
+  const maps = frontmatter.maps;
+  const qrcode = frontmatter.qrcode;
 
   return (
     <section className="event-detail-area">
@@ -77,6 +79,18 @@ const EventsDetail = ({ content, next, prev }) => {
                   )}
                 </ul>
               </div>
+              {qrcode && (
+                <div className="event-detail-item text-center">
+                  <h3 className="event__title mb-4">Pindai Peta lokasi</h3>
+                  <a href={maps} rel="noreferrer" target="_blank">
+                    <img
+                      className="img-thumbnail"
+                      src={qrcode}
+                      alt={`Peta Lokasi: ${frontmatter.location}`}
+                    />
+                  </a>
+                </div>
+              )}
             </div>
           </div>
         </div>

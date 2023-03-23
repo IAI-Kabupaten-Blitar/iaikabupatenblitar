@@ -70,6 +70,8 @@ export const query = graphql`
         slug
         title
         time
+        maps
+        qrcode
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1200) {

@@ -6,6 +6,7 @@ contacts:
   - "apt. Aina - 0856 369 161 4"
   - "apt. Ulfa - 0857 354 371 87"
 location: "Forestero Hall, Kampung Coklat"
+maps: "https://www.google.com/maps/place/Kampung+Coklat/@-8.1560629,112.1702044,15z/data=!4m6!3m5!1s0x2e78ea495a3afc23:0xcb37ac5a146a3533!8m2!3d-8.1560629!4d112.1702044!16s%2Fg%2F11f3f1v01g?hl=id"
 time: "07.30 - 12.00"
 title: "Seminar dan Konfercab IAI Kabupaten Blitar 2023"
 thumbnail: "thumbnail.png"
