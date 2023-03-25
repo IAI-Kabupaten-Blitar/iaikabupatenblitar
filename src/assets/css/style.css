@@ -6414,3 +6414,7 @@ html {
   border-color: #e36955;
   transition: 0.3s ease-in;
 }
+
+.gatsby-resp-image-figcaption {
+  text-align: center;
+}
