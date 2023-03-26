@@ -23,17 +23,15 @@ const Layout = props => {
         absolutePath: { regex: "/images/" }
       ) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 800)
+          fixed(width: 650, toFormat: JPG, quality: 70) {
+            ...GatsbyImageSharpFixed
+          }
         }
       }
     }
   `);
   const { title, description, siteUrl } = MetaData.siteMetadata;
-  const {
-    src,
-    width,
-    height,
-  } = OgImage.childImageSharp.gatsbyImageData.images.fallback;
+  const { src, width, height } = OgImage.childImageSharp.fixed;
   const url = `${siteUrl}${src}`;
   const theTitle = props.pageTitle ? `${props.pageTitle} | ${title}` : title;
   const theDescription = props.pageDescription
@@ -60,6 +58,17 @@ const Layout = props => {
           ],
           site_name: title,
         }}
+        metaTags={[
+          {
+            property: "og:image:type",
+            content: "image/jpeg",
+          },
+          {
+            name: "thumbnailUrl",
+            content: url,
+            itemprop: "thumbnailUrl",
+          },
+        ]}
       />
       {props.children}
     </Fragment>

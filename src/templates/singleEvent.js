@@ -23,7 +23,7 @@ const singleEvent = ({ data, pageContext }) => {
     src,
     width,
     height,
-  } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData.images.fallback;
+  } = markdownRemark.frontmatter.thumbnail.childImageSharp.fixed;
   const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/kegiatan/${pathSlug}`;
   return (
@@ -45,6 +45,17 @@ const singleEvent = ({ data, pageContext }) => {
             },
           ],
         }}
+        metaTags={[
+          {
+            property: "og:image:type",
+            content: "image/jpeg",
+          },
+          {
+            name: "thumbnailUrl",
+            content: url,
+            itemprop: "thumbnailUrl",
+          },
+        ]}
       />
       <NavOne />
       <PageHeader title={title} />
@@ -77,7 +88,9 @@ export const query = graphql`
             fluid(maxWidth: 1200) {
               ...GatsbyImageSharpFluid
             }
-            gatsbyImageData(layout: FIXED)
+            fixed(width: 650, toFormat: JPG, quality: 70) {
+              ...GatsbyImageSharpFixed
+            }
           }
         }
       }
