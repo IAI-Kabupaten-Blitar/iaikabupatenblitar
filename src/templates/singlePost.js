@@ -32,6 +32,7 @@ const singlePost = ({ data, pageContext }) => {
         openGraph={{
           title,
           description: excerpt,
+          type: "article",
           images: [
             {
               url,
