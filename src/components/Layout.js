@@ -34,7 +34,6 @@ const Layout = props => {
   const { src, width, height } = OgImage.childImageSharp.fixed;
   const url = `${siteUrl}${src}`;
   const theTitle = props.pageTitle ? `${props.pageTitle} | ${title}` : title;
-  const ogTitle = props.pageTitle ? props.pageTitle : title;
   const theDescription = props.pageDescription
     ? props.pageDescription
     : description;
@@ -52,7 +51,7 @@ const Layout = props => {
         <link rel="canonical" href={theCanonical} key="canonical" />
         <meta property="og:type" content={theType} />
         <meta property="og:site_name" content={title} />
-        <meta property="og:title" content={ogTitle} />
+        <meta property="og:title" content={theTitle} />
         <meta property="og:description" content={theDescription} />
         <meta property="og:url" content={theCanonical} />
         <meta property="og:image" content={url} />
