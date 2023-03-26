@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GatsbySeo } from "gatsby-plugin-next-seo";
+import { Helmet } from "react-helmet";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -32,31 +32,12 @@ const singleEvent = ({ data, pageContext }) => {
       pageDescription={excerpt}
       canonical={canonical}
     >
-      <GatsbySeo
-        openGraph={{
-          title,
-          description: excerpt,
-          images: [
-            {
-              url,
-              width,
-              height,
-              alt: title,
-            },
-          ],
-        }}
-        metaTags={[
-          {
-            property: "og:image:type",
-            content: "image/jpeg",
-          },
-          {
-            name: "thumbnailUrl",
-            content: url,
-            itemprop: "thumbnailUrl",
-          },
-        ]}
-      />
+      <Helmet>
+        <meta property="og:image" content={url} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content={width} />
+        <meta property="og:image:height" content={height} />
+      </Helmet>
       <NavOne />
       <PageHeader title={title} />
       <EventsDetail content={markdownRemark} next={next} prev={prev} />

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import { GatsbySeo } from "gatsby-plugin-next-seo";
+import { Helmet } from "react-helmet";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../assets/css/font-awesome.css";
 import "../assets/css/animate.min.css";
@@ -38,38 +38,27 @@ const Layout = props => {
     ? props.pageDescription
     : description;
   const theCanonical = props.canonical ? props.canonical : siteUrl;
+  const theType = props.type ? props.type : "website";
   return (
     <Fragment>
-      <GatsbySeo
-        title={theTitle}
-        description={theDescription}
-        canonical={theCanonical}
-        openGraph={{
-          url: theCanonical,
-          title: theTitle,
-          description: theDescription,
-          images: [
-            {
-              url,
-              width,
-              height,
-              alt: title,
-            },
-          ],
-          site_name: title,
-        }}
-        metaTags={[
-          {
-            property: "og:image:type",
-            content: "image/jpeg",
-          },
-          {
-            name: "thumbnailUrl",
-            content: url,
-            itemprop: "thumbnailUrl",
-          },
-        ]}
-      />
+      <Helmet>
+        <title>{theTitle}</title>
+        <meta
+          name="description"
+          content={theDescription}
+          itemprop="description"
+        />
+        <link rel="canonical" href={theCanonical} key="canonical" />
+        <meta property="og:type" content={theType} />
+        <meta property="og:site_name" content={title} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={theDescription} />
+        <meta property="og:url" content={theCanonical} />
+        <meta property="og:image" content={url} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content={width} />
+        <meta property="og:image:height" content={height} />
+      </Helmet>
       {props.children}
     </Fragment>
   );

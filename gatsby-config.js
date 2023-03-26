@@ -30,18 +30,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-next-seo`,
-      options: {
-        openGraph: {
-          type: `website`,
-          locale: `id_ID`,
-          url: `https://www.iaikabupatenblitar.or.id/`,
-          canonical: `https://iaikabupatenblitar.or.id/`,
-          site_name: `Ikatan Apoteker Indonesia Kabupaten Blitar`,
-        },
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

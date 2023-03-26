@@ -1,6 +1,5 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { GatsbySeo } from "gatsby-plugin-next-seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -23,11 +22,6 @@ const postsPage = ({ data, pageContext }) => {
       pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
       canonical={canonical}
     >
-      <GatsbySeo
-        openGraph={{
-          url: canonical,
-        }}
-      />
       <NavOne />
       <PageHeader title="Berita" />
       <News posts={edges} />
