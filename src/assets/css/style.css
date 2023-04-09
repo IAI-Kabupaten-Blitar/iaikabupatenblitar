@@ -1677,6 +1677,7 @@ a:hover {
   letter-spacing: 0;
   color: #424242;
   font-weight: 800;
+  overflow-wrap: break-word;
   text-transform: capitalize;
 }
 .breadcrumb-area .breadcrumb-content .breadcrumb__list {
