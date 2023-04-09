@@ -1,5 +1,48 @@
 const path = require("path");
 
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNodeField } = actions;
+  if (
+    node.internal.type === "MarkdownRemark" &&
+    getNode(node.parent).sourceInstanceName === "events"
+  ) {
+    const eventSlug = node.frontmatter.slug;
+    createNodeField({
+      node,
+      name: "eventSlug",
+      value: eventSlug,
+    });
+  }
+
+  if (
+    node.internal.type === "MarkdownRemark" &&
+    getNode(node.parent).sourceInstanceName === "certificates"
+  ) {
+    const eventSlug = node.frontmatter.eventslug;
+    createNodeField({
+      node,
+      name: "certificateEventSlug",
+      value: eventSlug,
+    });
+  }
+};
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions;
+
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      frontmatter: Frontmatter
+      certificates: [MarkdownRemark] @link(by: "fields.certificateEventSlug", from: "fields.eventSlug")
+    }
+    type Frontmatter {
+      event: MarkdownRemark @link(by: "fields.eventSlug", from: "eventslug")
+    }
+  `;
+
+  createTypes(typeDefs);
+};
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
@@ -8,6 +51,7 @@ exports.createPages = ({ graphql, actions }) => {
     const postsPageTemplate = path.resolve("src/templates/postsPage.js");
     const eventTemplate = path.resolve("src/templates/singleEvent.js");
     const eventsPageTemplate = path.resolve("src/templates/eventsPage.js");
+    const certificateTemplate = path.resolve("src/templates/Sertifikat.js");
 
     resolve(
       graphql(
@@ -39,13 +83,43 @@ exports.createPages = ({ graphql, actions }) => {
                 }
               }
             }
+            Certificates: allMarkdownRemark(
+              sort: { order: ASC, fields: [frontmatter___date] }
+              filter: { fileAbsolutePath: { regex: "/certificates/" } }
+            ) {
+              edges {
+                node {
+                  frontmatter {
+                    eventslug
+                    nomor
+                  }
+                }
+              }
+            }
           }
         `
       ).then(result => {
+        // Certificates
+        const certificates = result.data.Certificates.edges;
+
         // Posts
         const posts = result.data.Posts.edges;
         const postsPerPage = 6;
         const numPages = Math.ceil(posts.length / postsPerPage);
+
+        // Certificate page
+        certificates.forEach(({ node }, index) => {
+          const { eventslug, nomor } = node.frontmatter;
+          createPage({
+            path: `/sertifikat/${eventslug}/${nomor}`,
+            component: certificateTemplate,
+            context: {
+              pathSlug: eventslug,
+              nomor: nomor,
+            },
+          });
+          resolve();
+        });
 
         // Berita list page
         Array.from({ length: numPages }).forEach((_, i) => {
