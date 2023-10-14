@@ -94,6 +94,15 @@ class NavOne extends Component {
                             <i className="fa fa-instagram"></i>
                           </a>
                         </li>
+                        <li>
+                          <a
+                            href="https://www.youtube.com/@iaipckabupatenblitar4225"
+                            rel="noreferrer"
+                            target="_blank"
+                          >
+                            <i className="fa fa-youtube"></i>
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
