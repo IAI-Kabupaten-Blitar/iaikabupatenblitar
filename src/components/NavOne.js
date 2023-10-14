@@ -87,7 +87,7 @@ class NavOne extends Component {
                         </li>
                         <li>
                           <a
-                            href="https://www.instagram.com/iai.blitarkabofficial/"
+                            href="https://www.instagram.com/iaikabblitar/"
                             rel="noreferrer"
                             target="_blank"
                           >
