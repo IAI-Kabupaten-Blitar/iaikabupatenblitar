@@ -23,7 +23,7 @@ const singlePost = ({ data, pageContext }) => {
     src,
     width,
     height,
-  } = markdownRemark.frontmatter.thumbnail.childImageSharp.fixed;
+  } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData;
   const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/berita/${pathSlug}`;
   return (
@@ -61,9 +61,7 @@ export const query = graphql`
         date(formatString: "DD MMMM YYYY", locale: "id_ID")
         thumbnail {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
             fixed(width: 650, toFormat: JPG, quality: 70) {
               ...GatsbyImageSharpFixed
             }

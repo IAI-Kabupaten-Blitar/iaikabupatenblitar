@@ -60,9 +60,12 @@ export const query = graphql`
             slug
             thumbnail {
               childImageSharp {
-                fixed(width: 650, toFormat: JPG, quality: 70) {
-                  ...GatsbyImageSharpFixed
-                }
+                gatsbyImageData(
+                  width: 650
+                  formats: [JPG]
+                  quality: 70
+                  layout: FIXED
+                )
               }
             }
           }

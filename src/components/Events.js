@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import moment from "moment";
 import "moment/locale/id";
 
@@ -11,7 +11,8 @@ const Events = ({ events }) => {
         <div className="row blog-content-wrap">
           {events.map(event => {
             const { frontmatter, id } = event.node;
-            const images = frontmatter.thumbnail.childImageSharp.fluid;
+            const images =
+              frontmatter.thumbnail.childImageSharp.gatsbyImageData;
             moment.locale("id");
             const date = moment(frontmatter.date);
             return (
@@ -20,7 +21,7 @@ const Events = ({ events }) => {
                   <div className="blog-item blog-item1">
                     <Link to={`/kegiatan/${frontmatter.slug}`}>
                       <div className="blog-img">
-                        <Img fluid={images} />
+                        <GatsbyImage image={images} />
                         <span className="blog__tag blog__tag1">
                           <span className="date__num-text">
                             {date.format("DD")}

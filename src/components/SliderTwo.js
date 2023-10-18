@@ -1,5 +1,7 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
+import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 
 const SliderTwo = ({ className }) => {
@@ -9,16 +11,17 @@ const SliderTwo = ({ className }) => {
         id
         childImageSharp {
           id
-          fluid(quality: 100, maxWidth: 1200) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
         }
       }
     }
   `);
 
+  const image = getImage(Slider);
+  const bgImage = convertToBgImage(image);
+
   return (
-    <BackgroundImage fluid={Slider.childImageSharp.fluid}>
+    <BackgroundImage {...bgImage} preserveStackingContext>
       <section className="slider-area slider-area2 text-center">
         <div className="homepage-slide1">
           <div className="single-slide-item ">

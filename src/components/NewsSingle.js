@@ -1,11 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
 import Sidebar from "./Sidebar";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const NewsSingle = ({ content, next, prev }) => {
   const { html, frontmatter } = content;
   const { date, author, title } = frontmatter;
-  const images = frontmatter.thumbnail.childImageSharp.fluid;
+  const images = frontmatter.thumbnail.childImageSharp.gatsbyImageData;
+
+  console.log(images);
 
   return (
     <section className="causes-detail-area news-detail-area">
@@ -15,12 +18,7 @@ const NewsSingle = ({ content, next, prev }) => {
             <div className="blog-content">
               <div className="blog-item">
                 <div className="blog-img">
-                  <img
-                    srcSet={images.srcSet}
-                    sizes={images.sizes}
-                    src={images.src}
-                    alt=""
-                  />
+                  <GatsbyImage image={images} />
                   <span className="blog__date">{date}</span>
                 </div>
                 <div className="blog-inner-content">

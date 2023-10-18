@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const BlogHome = () => {
   const { firstPost, restOfThePosts } = useStaticQuery(graphql`
@@ -21,9 +21,7 @@ const BlogHome = () => {
               title
               thumbnail {
                 childImageSharp {
-                  fluid(maxWidth: 570, maxHeight: 354) {
-                    ...GatsbyImageSharpFluid
-                  }
+                  gatsbyImageData(width: 570, height: 354, layout: CONSTRAINED)
                 }
               }
             }
@@ -45,9 +43,7 @@ const BlogHome = () => {
               title
               thumbnail {
                 childImageSharp {
-                  fixed(width: 170, height: 137) {
-                    ...GatsbyImageSharpFixed
-                  }
+                  gatsbyImageData(width: 170, height: 137, layout: FIXED)
                 }
               }
             }
@@ -72,7 +68,8 @@ const BlogHome = () => {
           {firstPost.edges.length > 0 &&
             firstPost.edges.map(post => {
               const { excerpt, id, frontmatter } = post.node;
-              const image = frontmatter.thumbnail.childImageSharp.fluid;
+              const image =
+                frontmatter.thumbnail.childImageSharp.gatsbyImageData;
               return (
                 <div key={id} className="col-lg-6">
                   <div className="recent-item">
@@ -80,7 +77,7 @@ const BlogHome = () => {
                       <span className="meta__date-date">
                         {frontmatter.date}
                       </span>
-                      <Img fluid={image} />
+                      <GatsbyImage image={image} />
                     </div>
                     <div className="news__content">
                       <h3 className="news__content-title">
@@ -106,12 +103,13 @@ const BlogHome = () => {
                 {restOfThePosts.edges.length > 0 &&
                   restOfThePosts.edges.map(post => {
                     const { id, frontmatter } = post.node;
-                    const image = frontmatter.thumbnail.childImageSharp.fixed;
+                    const image =
+                      frontmatter.thumbnail.childImageSharp.gatsbyImageData;
                     return (
                       <li key={id}>
                         <div className="recent__img">
                           <Link to={`/berita/${frontmatter.slug}`}>
-                            <Img fixed={image} />
+                            <GatsbyImage image={image} />
                           </Link>
                         </div>
                         <div className="recent__content">

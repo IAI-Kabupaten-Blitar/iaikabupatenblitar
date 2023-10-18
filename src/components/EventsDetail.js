@@ -1,11 +1,11 @@
 import React from "react";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import moment from "moment";
 import "moment/locale/id";
 
 const EventsDetail = ({ content, next, prev }) => {
   const { frontmatter, html } = content;
-  const image = frontmatter.thumbnail.childImageSharp.fluid;
+  const image = frontmatter.thumbnail.childImageSharp.gatsbyImageData;
   const title = frontmatter.title;
   const date = moment(frontmatter.date);
   const maps = frontmatter.maps;
@@ -19,7 +19,7 @@ const EventsDetail = ({ content, next, prev }) => {
             <div className="blog-content">
               <div className="blog-item">
                 <div className="blog-img">
-                  <Img fluid={image} />
+                  <GatsbyImage image={image} />
                   {date && (
                     <span className="blog__tag">
                       <span className="date__num-text">

@@ -1,29 +1,23 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const HiwArea = () => {
   const { Simona, Siap, Sipnap } = useStaticQuery(graphql`
     {
       Simona: file(relativePath: { eq: "simona.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       Siap: file(relativePath: { eq: "siap.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       Sipnap: file(relativePath: { eq: "sipnap.png" }) {
         childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -47,7 +41,7 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg1">
                 <figure>
-                  <Img fluid={Simona.childImageSharp.fluid} />
+                  <GatsbyImage image={Simona.childImageSharp.gatsbyImageData} />
                   <h3 className="hiw-title">SIMONA Kemkes</h3>
                   <div className="hiw-btn-box">
                     <a
@@ -67,7 +61,7 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg2">
                 <figure>
-                  <Img fluid={Siap.childImageSharp.fluid} />
+                  <GatsbyImage image={Siap.childImageSharp.gatsbyImageData} />
                   <h3 className="hiw-title">WEBINAR IAI</h3>
                   <div className="hiw-btn-box">
                     <a
@@ -87,7 +81,7 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg3">
                 <figure>
-                  <Img fluid={Sipnap.childImageSharp.fluid} />
+                  <GatsbyImage image={Sipnap.childImageSharp.gatsbyImageData} />
                   <h3 className="hiw-title">Lapor SIPNAP</h3>
                   <div className="hiw-btn-box">
                     <a

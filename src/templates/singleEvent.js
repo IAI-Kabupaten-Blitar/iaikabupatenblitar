@@ -23,7 +23,7 @@ const singleEvent = ({ data, pageContext }) => {
     src,
     width,
     height,
-  } = markdownRemark.frontmatter.thumbnail.childImageSharp.fixed;
+  } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData;
   const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/kegiatan/${pathSlug}`;
   return (
@@ -66,9 +66,7 @@ export const query = graphql`
         qrcode
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 1200) {
-              ...GatsbyImageSharpFluid
-            }
+            gatsbyImageData(layout: FULL_WIDTH)
             fixed(width: 650, toFormat: JPG, quality: 70) {
               ...GatsbyImageSharpFixed
             }

@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const Sidebar = () => {
   const {
@@ -20,9 +20,7 @@ const Sidebar = () => {
               title
               thumbnail {
                 childImageSharp {
-                  fixed(width: 59, height: 59) {
-                    ...GatsbyImageSharpFixed
-                  }
+                  gatsbyImageData(width: 59, height: 59, layout: FIXED)
                 }
               }
             }
@@ -38,11 +36,12 @@ const Sidebar = () => {
         <h2 className="widget__title">Artikel Terakhir</h2>
         {edges.map(post => {
           const { frontmatter, id } = post.node;
-          const thumbnail = frontmatter.thumbnail.childImageSharp.fixed;
+          const thumbnail =
+            frontmatter.thumbnail.childImageSharp.gatsbyImageData;
           return (
             <div key={id} className="author-box recent-donate-item">
               <div className="author__avatar">
-                <Img fixed={thumbnail} />
+                <GatsbyImage image={thumbnail} />
               </div>
               <div className="author__detail">
                 <h4 className="author__title author__title2">

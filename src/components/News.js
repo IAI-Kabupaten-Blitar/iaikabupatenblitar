@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import Img from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 const News = ({ posts }) => {
   return (
@@ -9,7 +9,8 @@ const News = ({ posts }) => {
         <div className="row recent-post-wrap">
           {posts.map(post => {
             const { frontmatter, id, excerpt } = post.node;
-            const images = frontmatter.thumbnail.childImageSharp.fluid;
+            const images =
+              frontmatter.thumbnail.childImageSharp.gatsbyImageData;
             return (
               <div key={id} className="col-lg-6 col-sm-6">
                 <div className="recent-item">
@@ -19,7 +20,7 @@ const News = ({ posts }) => {
                     </span>
 
                     <Link to={`/berita/${frontmatter.slug}`}>
-                      <Img fluid={images} />
+                      <GatsbyImage image={images} />
                     </Link>
                   </div>
                   <div className="news__content">
