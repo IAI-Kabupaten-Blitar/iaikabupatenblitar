@@ -6,10 +6,12 @@
   "author": "Taufan Rezzafri <rezzafri@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.5.3",
+    "decap-cms-app": "^3.0.10",
     "gatsby": "^4.0.0",
     "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-image": "^2.0.0",
     "gatsby-plugin-manifest": "^4.0.0",
+    "gatsby-plugin-netlify-cms": "^6.25.0",
     "gatsby-plugin-offline": "^5.0.0",
     "gatsby-plugin-react-helmet": "^5.0.0",
     "gatsby-plugin-sharp": "^4.0.0",

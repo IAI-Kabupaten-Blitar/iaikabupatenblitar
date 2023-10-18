@@ -14,6 +14,7 @@ module.exports = {
     author: `@rezzafri_apt`,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
