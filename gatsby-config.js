@@ -14,7 +14,6 @@ module.exports = {
     author: `@rezzafri_apt`,
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
@@ -94,6 +93,13 @@ module.exports = {
           },
           `gatsby-plugin-qrcode`,
         ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        manualInit: true,
+        modulePath: `${__dirname}/src/cms/cms.js`,
       },
     },
   ],

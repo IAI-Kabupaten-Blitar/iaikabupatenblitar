@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Taufan Rezzafri <rezzafri@gmail.com>",
   "dependencies": {
+    "@sindresorhus/slugify": "^2.2.1",
     "bootstrap": "^4.5.3",
     "decap-cms-app": "^3.0.10",
     "gatsby": "^4.0.0",
