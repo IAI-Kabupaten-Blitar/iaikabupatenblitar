@@ -1,5 +1,8 @@
 import CMS from "decap-cms-app";
 import slugify from "@sindresorhus/slugify";
+import id from "./id";
+
+CMS.registerLocale("id", id);
 
 CMS.registerEventListener({
   name: "preSave",

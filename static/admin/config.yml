@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: decap
 
+local_backend: true
+locale: "id"
 media_folder: "static/images/uploads"
 public_folder: "/images/uploads"
 
@@ -16,7 +18,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Judul", name: "title", widget: "string", required: true }
       - {
           label: "Slug",
           name: "slug",
@@ -26,7 +28,7 @@ collections:
           pattern: ["^[-a-z0-9]+$", "Must be a valid URL slug"],
         }
       - {
-          label: "Date",
+          label: "Tanggal",
           name: "date",
           widget: "datetime",
           format: "YYYY-MM-DD",
@@ -36,4 +38,4 @@ collections:
         }
       - { label: "Penulis", name: "author", widget: "string" }
       - { label: "Gambar Utama", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Tulisan", name: "body", widget: "markdown" }
