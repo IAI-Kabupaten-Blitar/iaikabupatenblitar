@@ -4,6 +4,14 @@ import id from "./id";
 
 CMS.registerLocale("id", id);
 
+const config = {
+  backend: {
+    name: "git-gateway",
+    branch: process.env.GATSBY_BRANCH || "master",
+  },
+  local_backend: process.env.GATSBY_LOCAL_BACKEND === "true",
+};
+
 CMS.registerEventListener({
   name: "preSave",
   handler: data => {
@@ -18,4 +26,4 @@ CMS.registerEventListener({
   },
 });
 
-CMS.init();
+CMS.init({ config });
