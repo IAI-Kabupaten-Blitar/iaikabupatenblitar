@@ -34,7 +34,7 @@
     "react-id-swiper": "^3.0.0",
     "react-modal-video": "^1.0.0",
     "react-visibility-sensor": "^5.0.0",
-    "swiper": "^5.0.0"
+    "swiper": ">=6.5.1"
   },
   "resolutions": {
     "remark-mdx": "2.0.0-next.9"
