@@ -7,7 +7,8 @@ CMS.registerLocale("id", id);
 
 const config = {
   backend: {
-    name: "git-gateway",
+    name: "github",
+    repo: "IAI-Kabupaten-Blitar/iaikabupatenblitar",
     branch: process.env.GATSBY_BRANCH || "master",
   },
   local_backend: process.env.NODE_ENV === "development",
