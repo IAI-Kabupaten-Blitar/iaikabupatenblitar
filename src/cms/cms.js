@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === "production") {
     collection => collection.name === "posts"
   );
   if (postsIndex !== -1)
-    config.collections[postsIndex].preview_path = "berita/{{slug}}";
+    config.collections[postsIndex].preview_path = "berita/{{fields.slug}}";
 }
 
 CMS.registerEventListener({

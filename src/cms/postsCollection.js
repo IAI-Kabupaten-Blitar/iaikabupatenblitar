@@ -6,6 +6,7 @@ const postsCollection = {
   media_folder: "",
   public_folder: "",
   path: "{{year}}-{{month}}-{{day}}-{{slug}}/index",
+  slug: "{{fields.slug}}",
   editor: {
     preview: false,
   },
