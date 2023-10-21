@@ -19,7 +19,13 @@ const config = {
 };
 
 if (process.env.NODE_ENV === "production") {
+  if (process.env.GATSBY_BASE_URL) {
+    config.backend.base_url = process.env.GATSBY_BASE_URL;
+    config.auth_endpoint = "/api/auth";
+  }
+
   config.publish_mode = "editorial_workflow";
+
   const postsIndex = config.collections.findIndex(
     collection => collection.name === "posts"
   );
