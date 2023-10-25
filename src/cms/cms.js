@@ -2,6 +2,7 @@ import CMS from "decap-cms-app";
 import slugify from "@sindresorhus/slugify";
 import id from "./id";
 import postsCollection from "./postsCollection";
+import eventsCollection from "./eventsCollection";
 
 CMS.registerLocale("id", id);
 
@@ -15,7 +16,7 @@ const config = {
   locale: "id",
   media_folder: "static/images/uploads",
   public_folder: "/images/uploads",
-  collections: [postsCollection],
+  collections: [postsCollection, eventsCollection],
 };
 
 if (process.env.NODE_ENV === "production") {
@@ -37,7 +38,6 @@ CMS.registerEventListener({
   name: "preSave",
   handler: data => {
     const { entry } = data;
-    if (entry.get("collection") !== "posts") return;
 
     if (entry.getIn(["data", "slug"], "")) return;
 
