@@ -30,7 +30,7 @@ const HiwArea = () => {
           <div className="col-lg-8 mx-auto text-center">
             <div className="section-heading blog-heading mb-5">
               <h2 className="section__title">Aplikasi</h2>
-              <p class="section__meta">
+              <p className="section__meta">
                 website aplikasi pendukung praktek kefarmasian
               </p>
             </div>
@@ -41,7 +41,10 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg1">
                 <figure>
-                  <GatsbyImage image={Simona.childImageSharp.gatsbyImageData} />
+                  <GatsbyImage
+                    image={Simona.childImageSharp.gatsbyImageData}
+                    alt={""}
+                  />
                   <h3 className="hiw-title">SIMONA Kemkes</h3>
                   <div className="hiw-btn-box">
                     <a
@@ -61,7 +64,10 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg2">
                 <figure>
-                  <GatsbyImage image={Siap.childImageSharp.gatsbyImageData} />
+                  <GatsbyImage
+                    image={Siap.childImageSharp.gatsbyImageData}
+                    alt={""}
+                  />
                   <h3 className="hiw-title">WEBINAR IAI</h3>
                   <div className="hiw-btn-box">
                     <a
@@ -81,7 +87,10 @@ const HiwArea = () => {
             <div className="hiw-item">
               <div className="hiw-item-img-box hiw-bg3">
                 <figure>
-                  <GatsbyImage image={Sipnap.childImageSharp.gatsbyImageData} />
+                  <GatsbyImage
+                    image={Sipnap.childImageSharp.gatsbyImageData}
+                    alt={""}
+                  />
                   <h3 className="hiw-title">Lapor SIPNAP</h3>
                   <div className="hiw-btn-box">
                     <a

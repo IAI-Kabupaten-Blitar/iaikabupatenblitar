@@ -41,7 +41,7 @@ const Sidebar = () => {
           return (
             <div key={id} className="author-box recent-donate-item">
               <div className="author__avatar">
-                <GatsbyImage image={thumbnail} />
+                <GatsbyImage image={thumbnail} alt={""} />
               </div>
               <div className="author__detail">
                 <h4 className="author__title author__title2">

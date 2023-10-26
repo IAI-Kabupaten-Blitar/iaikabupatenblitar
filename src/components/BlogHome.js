@@ -60,7 +60,9 @@ const BlogHome = () => {
           <div className="col-lg-8 mx-auto text-center">
             <div className="section-heading blog-heading">
               <h2 className="section__title">Berita Terbaru</h2>
-              <p class="section__meta">berita dan laporan kegiatan terbaru</p>
+              <p className="section__meta">
+                berita dan laporan kegiatan terbaru
+              </p>
             </div>
           </div>
         </div>
@@ -77,7 +79,7 @@ const BlogHome = () => {
                       <span className="meta__date-date">
                         {frontmatter.date}
                       </span>
-                      <GatsbyImage image={image} />
+                      <GatsbyImage image={image} alt={""} />
                     </div>
                     <div className="news__content">
                       <h3 className="news__content-title">
@@ -109,7 +111,7 @@ const BlogHome = () => {
                       <li key={id}>
                         <div className="recent__img">
                           <Link to={`/berita/${frontmatter.slug}`}>
-                            <GatsbyImage image={image} />
+                            <GatsbyImage image={image} alt={""} />
                           </Link>
                         </div>
                         <div className="recent__content">

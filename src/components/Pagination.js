@@ -7,7 +7,6 @@ const Pagination = ({ currentPage, numPages, slug }) => {
   const prevPage =
     currentPage - 1 === 1 ? "/berita" : (currentPage - 1).toString();
   const nextPage = (currentPage + 1).toString();
-  console.log(numPages);
   return (
     <div className="container">
       <div className="row">

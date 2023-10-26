@@ -21,7 +21,7 @@ const Events = ({ events }) => {
                   <div className="blog-item blog-item1">
                     <Link to={`/kegiatan/${frontmatter.slug}`}>
                       <div className="blog-img">
-                        <GatsbyImage image={images} />
+                        <GatsbyImage image={images} alt={""} />
                         <span className="blog__tag blog__tag1">
                           <span className="date__num-text">
                             {date.format("DD")}

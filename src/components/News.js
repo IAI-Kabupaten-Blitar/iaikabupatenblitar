@@ -20,7 +20,7 @@ const News = ({ posts }) => {
                     </span>
 
                     <Link to={`/berita/${frontmatter.slug}`}>
-                      <GatsbyImage image={images} />
+                      <GatsbyImage image={images} alt={""} />
                     </Link>
                   </div>
                   <div className="news__content">

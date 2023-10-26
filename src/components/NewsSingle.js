@@ -8,8 +8,6 @@ const NewsSingle = ({ content, next, prev }) => {
   const { date, author, title } = frontmatter;
   const images = frontmatter.thumbnail.childImageSharp.gatsbyImageData;
 
-  console.log(images);
-
   return (
     <section className="causes-detail-area news-detail-area">
       <div className="container">
@@ -18,7 +16,7 @@ const NewsSingle = ({ content, next, prev }) => {
             <div className="blog-content">
               <div className="blog-item">
                 <div className="blog-img">
-                  <GatsbyImage image={images} />
+                  <GatsbyImage image={images} alt={""} />
                   <span className="blog__date">{date}</span>
                 </div>
                 <div className="blog-inner-content">
