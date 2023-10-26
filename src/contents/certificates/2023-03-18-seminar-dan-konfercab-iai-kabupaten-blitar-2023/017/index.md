@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](017 apt. Purwantoro, S.Si.png)
+![GATSBY_EMPTY_ALT](017-apt.-purwantoro,-s.si.png)

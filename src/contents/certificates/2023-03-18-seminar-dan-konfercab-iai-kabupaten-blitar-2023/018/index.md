@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](018 apt. Nabella Anggraeni, S.Farm.png)
+![GATSBY_EMPTY_ALT](018-apt.-nabella-anggraeni,-s.farm.png)

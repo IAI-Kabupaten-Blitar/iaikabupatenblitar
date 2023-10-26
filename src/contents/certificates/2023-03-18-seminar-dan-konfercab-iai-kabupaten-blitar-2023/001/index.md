@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](001 apt. Wiwik Rusdyaningsih, S.Farm.png)
+![GATSBY_EMPTY_ALT](01-apt.-wiwik-rusdyaningsih,-s.farm.png)

@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](010 apt. Vagen Setya Liani, S.Farm.png)
+![GATSBY_EMPTY_ALT](010-apt.-vagen-setya-liani,-s.farm.png)

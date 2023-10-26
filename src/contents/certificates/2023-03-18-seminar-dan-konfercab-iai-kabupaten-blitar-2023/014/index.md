@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](014 apt. Siti Isticharoh, S.Farm.png)
+![GATSBY_EMPTY_ALT](014-apt.-siti-isticharoh,-s.farm.png)

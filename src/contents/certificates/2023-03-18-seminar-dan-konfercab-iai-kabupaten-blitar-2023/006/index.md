@@ -9,4 +9,4 @@ date: "2023-03-18"
 seminartitle: "Seminar dan Konfercab IAI Kabupaten Blitar 2023"
 ---
 
-![GATSBY_EMPTY_ALT](006 apt. Faranita Churul Aini, S.Farm.png)
+![GATSBY_EMPTY_ALT](006-apt.-faranita-churul-aini,-s.farm.png)

@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](023 apt. Deddy Setiawan, S.Farm.png)
+![GATSBY_EMPTY_ALT](023-apt.-deddy-setiawan,-s.farm.png)

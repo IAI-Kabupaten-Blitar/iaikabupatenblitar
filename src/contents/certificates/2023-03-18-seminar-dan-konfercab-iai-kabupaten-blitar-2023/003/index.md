@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](003 apt. Terry Setyorini, S.Si.png)
+![GATSBY_EMPTY_ALT](003-apt.-terry-setyorini,-s.si.png)

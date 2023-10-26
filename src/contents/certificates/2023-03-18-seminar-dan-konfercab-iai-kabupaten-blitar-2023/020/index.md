@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](020 apt. Nabila Putri Gusmiarni, S.Farm.png)
+![GATSBY_EMPTY_ALT](020-apt.-nabila-putri-gusmiarni,-s.farm.png)

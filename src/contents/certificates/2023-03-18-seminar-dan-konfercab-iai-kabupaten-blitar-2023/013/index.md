@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](013 apt. Retno Juwita Sari, S.Farm.png)
+![GATSBY_EMPTY_ALT](013-apt.-retno-juwita-sari,-s.farm.png)

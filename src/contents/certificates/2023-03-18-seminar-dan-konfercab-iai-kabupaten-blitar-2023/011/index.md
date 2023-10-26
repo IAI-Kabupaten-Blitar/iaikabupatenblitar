@@ -8,4 +8,4 @@ eventslug: "seminar-dan-konfercab-iai-kabupaten-blitar-2023"
 date: "2023-03-18"
 ---
 
-![GATSBY_EMPTY_ALT](011 apt. Eva Rosyana Dewi, S.Farm.png)
+![GATSBY_EMPTY_ALT](011-apt.-eva-rosyana-dewi,-s.farm.png)
