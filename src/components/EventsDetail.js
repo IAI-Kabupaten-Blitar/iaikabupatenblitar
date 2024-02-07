@@ -19,7 +19,7 @@ const EventsDetail = ({ content, next, prev }) => {
             <div className="blog-content">
               <div className="blog-item">
                 <div className="blog-img">
-                  <GatsbyImage image={image} />
+                  <GatsbyImage image={image} alt="" />
                   {date && (
                     <span className="blog__tag">
                       <span className="date__num-text">
@@ -61,9 +61,9 @@ const EventsDetail = ({ content, next, prev }) => {
                   )}
                   {frontmatter.contacts.length > 0 && (
                     <li>
-                      {frontmatter.contacts.map(contact => {
+                      {frontmatter.contacts.map((contact, index) => {
                         return (
-                          <div>
+                          <div key={index}>
                             <span>Kontak:</span>
                             {contact}
                           </div>
