@@ -9,7 +9,7 @@ location: Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar,  Jl.
 maps: https://maps.app.goo.gl/SGRp2Tn9x4uvSVLF8
 contacts:
   - apt. Pristina Pangestuti, S.Farm (+62 858-1572-5313)
-thumbnail: seminar-raker-2024.png
+thumbnail: seminar-raker-2024-2.png
 ---
 Blitar, Jawa Timur – Ikatan Apoteker Indonesia (IAI) Cabang Kabupaten Blitar akan mengadakan kegiatan bertajuk **"Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2023 – 2027 Dan Rapat Kerja, Serta Seminar"** pada hari Sabtu, 24 Februari 2024. Acara ini akan berlangsung di Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar Jl. Kusuma Bangsa, No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur.
 
