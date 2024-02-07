@@ -23,6 +23,9 @@ const Layout = props => {
         absolutePath: { regex: "/images/" }
       ) {
         childImageSharp {
+          fixed(width: 650, toFormat: JPG, quality: 70) {
+            ...GatsbyImageSharpFixed
+          }
           gatsbyImageData(
             width: 650
             formats: [JPG]
@@ -34,7 +37,7 @@ const Layout = props => {
     }
   `);
   const { title, description, siteUrl } = MetaData.siteMetadata;
-  const { src, width, height } = OgImage.childImageSharp.gatsbyImageData;
+  const { src, width, height } = OgImage.childImageSharp.fixed;
   const url = `${siteUrl}${src}`;
   const theTitle = props.pageTitle ? `${props.pageTitle} | ${title}` : title;
   const theDescription = props.pageDescription

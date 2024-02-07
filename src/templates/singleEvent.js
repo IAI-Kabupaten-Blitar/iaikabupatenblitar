@@ -23,7 +23,7 @@ const singleEvent = ({ data, pageContext }) => {
     src,
     width,
     height,
-  } = markdownRemark.frontmatter.thumbnail.childImageSharp.gatsbyImageData;
+  } = markdownRemark.frontmatter.thumbnail.childImageSharp.fixed;
   const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/kegiatan/${pathSlug}`;
   return (
