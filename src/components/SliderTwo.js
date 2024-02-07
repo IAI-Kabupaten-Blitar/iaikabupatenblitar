@@ -11,7 +11,12 @@ const SliderTwo = ({ className }) => {
         id
         childImageSharp {
           id
-          gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+          gatsbyImageData(
+            quality: 100
+            placeholder: BLURRED
+            layout: FULL_WIDTH
+            formats: [AUTO, WEBP, AVIF]
+          )
         }
       }
     }
