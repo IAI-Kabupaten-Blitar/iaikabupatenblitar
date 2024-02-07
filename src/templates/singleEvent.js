@@ -37,6 +37,7 @@ const singleEvent = ({ data, pageContext }) => {
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content={width} />
         <meta property="og:image:height" content={height} />
+        <meta name="twitter:image" content={url} />
       </Helmet>
       <NavOne />
       <PageHeader title={title} />

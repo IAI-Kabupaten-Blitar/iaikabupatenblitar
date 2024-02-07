@@ -14,6 +14,7 @@ module.exports = {
       "farmasi",
       "pelayanan kesehatan",
     ],
+    domain: "iaikabupatenblitar.or.id",
     siteUrl: "https://www.iaikabupatenblitar.or.id",
     author: `@rezzafri_apt`,
   },

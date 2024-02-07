@@ -36,7 +36,7 @@ const Layout = props => {
       }
     }
   `);
-  const { title, description, siteUrl } = MetaData.siteMetadata;
+  const { title, description, siteUrl, domain } = MetaData.siteMetadata;
   const { src, width, height } = OgImage.childImageSharp.fixed;
   const url = `${siteUrl}${src}`;
   const theTitle = props.pageTitle ? `${props.pageTitle} | ${title}` : title;
@@ -64,6 +64,12 @@ const Layout = props => {
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content={width} />
         <meta property="og:image:height" content={height} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="twitter:domain" content={domain} />
+        <meta property="twitter:url" content={theCanonical} />
+        <meta name="twitter:title" content={theTitle} />
+        <meta name="twitter:description" content={theDescription} />
+        <meta name="twitter:image" content={url} />
       </Helmet>
       {props.children}
     </Fragment>
