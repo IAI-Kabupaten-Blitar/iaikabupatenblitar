@@ -3075,7 +3075,8 @@ a:hover {
   .blog-inner-content-2
   .causes__text {
   line-height: 30px;
-  margin-bottom: 34px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .causes-detail-area
   .blog-content-wrap
@@ -3899,7 +3900,8 @@ a:hover {
 }
 .event-detail-area .event-detail-content .causes__text {
   line-height: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .event-detail-area .event-detail-content .event__title2 {
   font-size: 26px;
@@ -6418,4 +6420,24 @@ html {
 
 .gatsby-resp-image-figcaption {
   text-align: center;
+}
+
+.blog-content ul,
+.blog-content ol,
+.event-detail-content ul,
+.event-detail-content ol {
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.blog-content ul,
+.event-detail-content ul {
+  list-style: disc;
+}
+
+ul.pagination,
+ul.blog__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
 }
