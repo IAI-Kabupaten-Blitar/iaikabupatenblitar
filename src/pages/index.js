@@ -1,4 +1,5 @@
 import React from "react";
+import Seo from "../components/Seo";
 import Footer from "../components/Footer";
 import HiwArea from "../components/HiwArea";
 import BlogHome from "../components/BlogHome";
@@ -17,5 +18,7 @@ const HomePage = () => {
     </Layout>
   );
 };
+
+export const Head = () => <Seo />;
 
 export default HomePage;

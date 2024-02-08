@@ -1,29 +1,20 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
 import Footer from "../components/Footer";
 
-const Sertifikat = ({ data, pageContext }) => {
-  const {
-    markdownRemark,
-    site: {
-      siteMetadata: { siteUrl },
-    },
-  } = data;
-  const { nomor, pathSlug } = pageContext;
+const Sertifikat = ({ data }) => {
   const {
     frontmatter: { sertifikat },
     html,
-  } = markdownRemark;
-
-  const canonical = `${siteUrl}/sertifikat/${pathSlug}/${nomor}`;
+  } = data.markdownRemark;
   return (
-    <Layout pageTitle={`Sertifikat: ${sertifikat}`} canonical={canonical}>
+    <Layout>
       <NavOne />
       <PageHeader title={sertifikat} />
-
       <section className="event-detail-area">
         <div className="container">
           <div className="row">
@@ -35,10 +26,24 @@ const Sertifikat = ({ data, pageContext }) => {
           </div>
         </div>
       </section>
-
       <Footer />
     </Layout>
   );
+};
+
+export const Head = ({ data, pageContext }) => {
+  const {
+    markdownRemark,
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
+  const { nomor, pathSlug } = pageContext;
+  const {
+    frontmatter: { sertifikat },
+  } = markdownRemark;
+  const canonical = `${siteUrl}/sertifikat/${pathSlug}/${nomor}`;
+  return <Seo pageTitle={`Sertifikat: ${sertifikat}`} canonical={canonical} />;
 };
 
 export const query = graphql`

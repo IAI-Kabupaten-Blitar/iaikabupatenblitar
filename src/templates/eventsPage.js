@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -10,18 +11,10 @@ import Pagination from "../components/Pagination";
 const eventsPage = ({ data, pageContext }) => {
   const {
     allMarkdownRemark: { edges },
-    site: {
-      siteMetadata: { siteUrl },
-    },
   } = data;
   const { currentPage, numPages } = pageContext;
-  const canonical = `${siteUrl}/kegiatan`;
   return (
-    <Layout
-      pageTitle="Kegiatan"
-      pageDescription="Kegiatan-kegiatan Ikatan Apoteker Indonesia Kabupaten Blitar"
-      canonical={canonical}
-    >
+    <Layout>
       <NavOne />
       <PageHeader title="Kegiatan" />
       <Events events={edges} />
@@ -32,6 +25,22 @@ const eventsPage = ({ data, pageContext }) => {
       />
       <Footer />
     </Layout>
+  );
+};
+
+export const Head = ({ data }) => {
+  const {
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
+  const canonical = `${siteUrl}/kegiatan`;
+  return (
+    <Seo
+      pageTitle="Kegiatan"
+      pageDescription="Kegiatan-kegiatan Ikatan Apoteker Indonesia Kabupaten Blitar"
+      canonical={canonical}
+    />
   );
 };
 
@@ -56,9 +65,8 @@ export const query = graphql`
             thumbnail {
               childImageSharp {
                 gatsbyImageData(
-                  height: 320
-                  width: 570
-                  layout: FULL_WIDTH
+                  layout: CONSTRAINED
+                  width: 690
                   placeholder: BLURRED
                 )
               }

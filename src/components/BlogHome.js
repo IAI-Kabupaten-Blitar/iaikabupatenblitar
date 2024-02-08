@@ -22,9 +22,8 @@ const BlogHome = () => {
               thumbnail {
                 childImageSharp {
                   gatsbyImageData(
-                    width: 570
-                    height: 354
-                    layout: FULL_WIDTH
+                    layout: CONSTRAINED
+                    width: 690
                     placeholder: BLURRED
                   )
                 }

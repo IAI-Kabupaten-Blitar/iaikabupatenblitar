@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -8,13 +8,29 @@ import Footer from "../components/Footer";
 import NewsSingle from "../components/NewsSingle";
 
 const singlePost = ({ data, pageContext }) => {
+  const { markdownRemark } = data;
+  const { prev, next } = pageContext;
+  const {
+    frontmatter: { title },
+  } = markdownRemark;
+  return (
+    <Layout>
+      <NavOne />
+      <PageHeader title={title} />
+      <NewsSingle content={markdownRemark} next={next} prev={prev} />
+      <Footer />
+    </Layout>
+  );
+};
+
+export const Head = ({ data, pageContext }) => {
   const {
     markdownRemark,
     site: {
       siteMetadata: { siteUrl },
     },
   } = data;
-  const { prev, next, pathSlug } = pageContext;
+  const { pathSlug } = pageContext;
   const {
     frontmatter: { title },
     excerpt,
@@ -29,24 +45,15 @@ const singlePost = ({ data, pageContext }) => {
   const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/berita/${pathSlug}`;
   return (
-    <Layout
+    <Seo
       pageTitle={title}
       pageDescription={excerpt}
       canonical={canonical}
+      imageUrl={url}
+      imageWidth={width}
+      imageHeight={height}
       type="article"
-    >
-      <Helmet>
-        <meta property="og:image" content={url} />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content={width} />
-        <meta property="og:image:height" content={height} />
-        <meta name="twitter:image" content={url} />
-      </Helmet>
-      <NavOne />
-      <PageHeader title={title} />
-      <NewsSingle content={markdownRemark} next={next} prev={prev} />
-      <Footer />
-    </Layout>
+    />
   );
 };
 

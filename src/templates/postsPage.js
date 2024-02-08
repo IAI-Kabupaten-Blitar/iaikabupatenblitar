@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Seo from "../components/Seo";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
 import PageHeader from "../components/PageHeader";
@@ -10,24 +11,32 @@ import Pagination from "../components/Pagination";
 const postsPage = ({ data, pageContext }) => {
   const {
     allMarkdownRemark: { edges },
-    site: {
-      siteMetadata: { siteUrl },
-    },
   } = data;
   const { currentPage, numPages } = pageContext;
-  const canonical = `${siteUrl}/berita`;
   return (
-    <Layout
-      pageTitle="Berita"
-      pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
-      canonical={canonical}
-    >
+    <Layout>
       <NavOne />
       <PageHeader title="Berita" />
       <News posts={edges} />
       <Pagination currentPage={currentPage} numPages={numPages} slug="berita" />
       <Footer />
     </Layout>
+  );
+};
+
+export const Head = ({ data }) => {
+  const {
+    site: {
+      siteMetadata: { siteUrl },
+    },
+  } = data;
+  const canonical = `${siteUrl}/berita`;
+  return (
+    <Seo
+      pageTitle="Berita"
+      pageDescription="Berita-berita Ikatan Apoteker Indonesia Kabupaten Blitar"
+      canonical={canonical}
+    />
   );
 };
 
@@ -51,9 +60,8 @@ export const query = graphql`
             thumbnail {
               childImageSharp {
                 gatsbyImageData(
-                  height: 320
-                  width: 570
-                  layout: FULL_WIDTH
+                  layout: CONSTRAINED
+                  width: 690
                   placeholder: BLURRED
                 )
               }
