@@ -4,7 +4,7 @@ exports.createSchemaCustomization = ({ actions, schema }, options) => {
   const { createTypes } = actions;
 
   const typeDefs = [
-    "type MarkdownRemark implements Node { frontmatter: Frontmatter }",
+    "type MarkdownRemarkMaptoQrcode implements Node { frontmatter: Frontmatter }",
     schema.buildObjectType({
       name: "Frontmatter",
       fields: {
