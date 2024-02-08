@@ -21,7 +21,12 @@ const BlogHome = () => {
               title
               thumbnail {
                 childImageSharp {
-                  gatsbyImageData(width: 570, height: 354, layout: CONSTRAINED)
+                  gatsbyImageData(
+                    width: 570
+                    height: 354
+                    layout: FULL_WIDTH
+                    placeholder: BLURRED
+                  )
                 }
               }
             }
@@ -43,7 +48,12 @@ const BlogHome = () => {
               title
               thumbnail {
                 childImageSharp {
-                  gatsbyImageData(width: 170, height: 137, layout: FIXED)
+                  gatsbyImageData(
+                    width: 170
+                    height: 137
+                    layout: FIXED
+                    placeholder: BLURRED
+                  )
                 }
               }
             }

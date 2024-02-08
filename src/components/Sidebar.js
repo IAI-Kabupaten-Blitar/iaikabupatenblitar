@@ -20,7 +20,12 @@ const Sidebar = () => {
               title
               thumbnail {
                 childImageSharp {
-                  gatsbyImageData(width: 59, height: 59, layout: FIXED)
+                  gatsbyImageData(
+                    width: 59
+                    height: 59
+                    layout: FIXED
+                    placeholder: BLURRED
+                  )
                 }
               }
             }

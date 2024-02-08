@@ -7,17 +7,17 @@ const HiwArea = () => {
     {
       Simona: file(relativePath: { eq: "simona.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
       }
       Siap: file(relativePath: { eq: "siap.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
       }
       Sipnap: file(relativePath: { eq: "sipnap.png" }) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
       }
     }

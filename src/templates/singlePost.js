@@ -20,10 +20,12 @@ const singlePost = ({ data, pageContext }) => {
     excerpt,
   } = markdownRemark;
   const {
-    src,
+    images: {
+      fallback: { src },
+    },
     width,
     height,
-  } = markdownRemark.frontmatter.thumbnail.childImageSharp.fixed;
+  } = markdownRemark.frontmatter.thumbnail.childImageSharp.ogImage;
   const url = `${siteUrl}${src}`;
   const canonical = `${siteUrl}/berita/${pathSlug}`;
   return (
@@ -62,10 +64,13 @@ export const query = graphql`
         date(formatString: "DD MMMM YYYY", locale: "id_ID")
         thumbnail {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-            fixed(width: 650, toFormat: JPG, quality: 70) {
-              ...GatsbyImageSharpFixed
-            }
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+            ogImage: gatsbyImageData(
+              width: 650
+              formats: [JPG]
+              quality: 70
+              layout: FIXED
+            )
           }
         }
       }
