@@ -1,91 +1,53 @@
 import React from "react";
-import sectionIcon from "../images/section-icon.png";
-import blogImage1 from "../images/img7.jpg";
-import blogImage2 from "../images/img8.jpg";
-import blogImage3 from "../images/img9.jpg";
+import { useStaticQuery, graphql } from "gatsby";
+import Events from "../components/Events";
+
 const EventsHome = () => {
+  const { lastEvents } = useStaticQuery(graphql`
+    {
+      lastEvents: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { fileAbsolutePath: { regex: "/events/" } }
+        limit: 2
+      ) {
+        edges {
+          node {
+            id
+            excerpt(format: PLAIN)
+            frontmatter {
+              date(formatString: "DD MMMM YYYY", locale: "id_ID")
+              time
+              slug
+              title
+              location
+              thumbnail {
+                childImageSharp {
+                  gatsbyImageData(
+                    layout: CONSTRAINED
+                    width: 690
+                    placeholder: BLURRED
+                  )
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
   return (
-    <section className="causes-area upcoming-event-area">
+    <section className="causes-area upcoming-event-area mt-0 pt-0 pb-5">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 mx-auto">
             <div className="section-heading blog-heading text-center">
-              <div className="section-icon">
-                <img src={sectionIcon} alt="section-icon" />
-              </div>
-              <h2 className="section__title">Upcoming Events</h2>
-              <p className="section__meta">help us now</p>
+              <h2 className="section__title">Kegiatan</h2>
+              <p className="section__meta">Daftar Kegiatan</p>
             </div>
           </div>
         </div>
-        <div className="row blog-content-wrap">
-          <div className="col-lg-4">
-            <div className="blog-content">
-              <div className="blog-item blog-item1">
-                <div className="blog-img">
-                  <img src={blogImage1} alt="" />
-                  <span className="blog__tag blog__tag1">
-                    <span className="date__num-text">6</span>
-                    <span className="date__mon-text">may</span>
-                  </span>
-                </div>
-                <div className="blog-inner-content">
-                  <h3 className="blog__title">
-                    <a href="/events-detail">Save the planets</a>
-                  </h3>
-                  <ul className="blog__list">
-                    <li className="blog__dot-active">8:00am to 2:00pm</li>
-                    <li>San marcos</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="blog-content">
-              <div className="blog-item blog-item2">
-                <div className="blog-img">
-                  <img src={blogImage2} alt="" />
-                  <span className="blog__tag blog__tag2">
-                    <span className="date__num-text">9</span>
-                    <span className="date__mon-text">mar</span>
-                  </span>
-                </div>
-                <div className="blog-inner-content">
-                  <h3 className="blog__title">
-                    <a href="/events-detail">Play for the world</a>
-                  </h3>
-                  <ul className="blog__list">
-                    <li className="blog__dot-active">8:00am to 2:00pm</li>
-                    <li>San marcos</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="blog-content">
-              <div className="blog-item blog-item3">
-                <div className="blog-img">
-                  <img src={blogImage3} alt="" />
-                  <span className="blog__tag blog__tag3">
-                    <span className="date__num-text">4</span>
-                    <span className="date__mon-text">mar</span>
-                  </span>
-                </div>
-                <div className="blog-inner-content">
-                  <h3 className="blog__title">
-                    <a href="/events-detail">Water for charity</a>
-                  </h3>
-                  <ul className="blog__list">
-                    <li className="blog__dot-active">8:00am to 2:00pm</li>
-                    <li>San marcos</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        {lastEvents.edges.length > 0 && <Events events={lastEvents.edges} />}
       </div>
     </section>
   );

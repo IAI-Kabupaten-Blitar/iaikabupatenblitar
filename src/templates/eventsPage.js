@@ -17,7 +17,7 @@ const eventsPage = ({ data, pageContext }) => {
     <Layout>
       <NavOne />
       <PageHeader title="Kegiatan" />
-      <Events events={edges} />
+      <Events events={edges} section={1} />
       <Pagination
         currentPage={currentPage}
         numPages={numPages}
