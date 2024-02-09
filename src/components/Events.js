@@ -4,12 +4,16 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import moment from "moment";
 import "moment/locale/id";
 
-const Events = ({ events }) => {
+const Events = ({ events, section }) => {
   return (
-    <section className="causes-area upcoming-event-area upcoming-event-area2">
+    <section
+      className={
+        section ? "causes-area upcoming-event-area upcoming-event-area2" : ""
+      }
+    >
       <div className="container">
         <div className="row blog-content-wrap">
-          {events.map(event => {
+          {events.map((event, index) => {
             const { frontmatter, id } = event.node;
             const images =
               frontmatter.thumbnail.childImageSharp.gatsbyImageData;
@@ -18,11 +22,11 @@ const Events = ({ events }) => {
             return (
               <div key={id} className="col-lg-6">
                 <div className="blog-content">
-                  <div className="blog-item blog-item1">
+                  <div className={`blog-item blog-item${index + 1}`}>
                     <Link to={`/kegiatan/${frontmatter.slug}`}>
                       <div className="blog-img">
                         <GatsbyImage image={images} alt={""} />
-                        <span className="blog__tag blog__tag1">
+                        <span className={`blog__tag blog__tag${index + 1}`}>
                           <span className="date__num-text">
                             {date.format("DD")}
                           </span>

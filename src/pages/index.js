@@ -2,6 +2,7 @@ import React from "react";
 import Seo from "../components/Seo";
 import Footer from "../components/Footer";
 import HiwArea from "../components/HiwArea";
+import EventsHome from "../components/EventsHome";
 import BlogHome from "../components/BlogHome";
 import Layout from "../components/Layout";
 import NavOne from "../components/NavOne";
@@ -13,6 +14,7 @@ const HomePage = () => {
       <NavOne />
       <SliderTwo />
       <BlogHome />
+      <EventsHome />
       <HiwArea />
       <Footer />
     </Layout>
