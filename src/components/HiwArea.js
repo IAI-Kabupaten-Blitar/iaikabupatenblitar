@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 const HiwArea = () => {
-  const { Simona, Siap, Sipnap } = useStaticQuery(graphql`
+  const { Simona, Siap, Sipnap, Satusehat } = useStaticQuery(graphql`
     {
       Simona: file(relativePath: { eq: "simona.png" }) {
         childImageSharp {
@@ -16,6 +16,11 @@ const HiwArea = () => {
         }
       }
       Sipnap: file(relativePath: { eq: "sipnap.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+        }
+      }
+      Satusehat: file(relativePath: { eq: "satusehat.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
         }
@@ -100,6 +105,29 @@ const HiwArea = () => {
                       className="theme-btn"
                     >
                       Lapor SIPNAP
+                    </a>
+                  </div>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="hiw-item">
+              <div className="hiw-item-img-box hiw-bg1">
+                <figure>
+                  <GatsbyImage
+                    image={Satusehat.childImageSharp.gatsbyImageData}
+                    alt={""}
+                  />
+                  <h3 className="hiw-title">SATUSEHAT Kemkes</h3>
+                  <div className="hiw-btn-box">
+                    <a
+                      href="https://satusehat.kemkes.go.id/sdmk/login"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="theme-btn"
+                    >
+                      Daftar / Masuk
                     </a>
                   </div>
                 </figure>
