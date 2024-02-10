@@ -10,7 +10,6 @@ contacts:
   - apt. Pristina Pangestuti, S.Farm (+62 858-1572-5313)
 thumbnail: seminar-raker-2024.png
 ---
-
 Blitar, Jawa Timur – Ikatan Apoteker Indonesia (IAI) Cabang Kabupaten Blitar akan mengadakan kegiatan bertajuk **"Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2023 – 2027 Dan Rapat Kerja, Serta Seminar"** pada hari Sabtu, 24 Februari 2024. Acara ini akan berlangsung di Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar Jl. Kusuma Bangsa, No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur.
 
 Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan beberapa sasaran utama, yaitu:
@@ -23,19 +22,21 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 
 **Pendaftaran:**
 
-- **Anggota** PC IAI Kabupaten Blitar **Rp. 50.000,-**
-- **Non Anggota** PC IAI Kabupaten Blitar **Rp. 100.000,-**
-- **Rek BNI 1666694732 a.n Nenin Rika Susanti**
-- Peserta mempunyai akun SIAP aktif dan mengajukan pendaftaran kegiatan ini di SIAP.
+* **Anggota** PC IAI Kabupaten Blitar **Rp. 50.000,-**
+* **Non Anggota** PC IAI Kabupaten Blitar **Rp. 100.000,-**
+* **Rek BNI 1666694732 a.n Nenin Rika Susanti**
+* Peserta mempunyai akun SIAP aktif dan mengajukan pendaftaran kegiatan ini di SIAP.
 
 **Rangkaian Acara:**
 
-- **07.00 – 07.50 WIB**: Registrasi
-- **08.00 – 08.30 WIB**: Pembukaan
-- **08.30 – 10.30 WIB**: Seminar
-- **10.30 – 11.00 WIB**: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2023 – 2027
-- **11.00 – 11.50 WIB**: Presentasi Bidang, Persiapan Raker
-- **12.10 – 13.00 WIB**: _Ishoma_
-- **13.00 – 14.00 WIB**: Sidang Pleno 1
-- **14.00 – 15.30 WIB**: Sidang Pleno 2
-- **15.30 – 15.45 WIB**: Penutup
+* **07.00 – 07.50 WIB**: Registrasi
+* **08.00 – 08.30 WIB**: Pembukaan
+* **08.30 – 10.30 WIB**: Seminar
+* **10.30 – 11.00 WIB**: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2023 – 2027
+* **11.00 – 11.50 WIB**: Presentasi Bidang, Persiapan Raker
+* **12.10 – 13.00 WIB**: *Ishoma*
+* **13.00 – 14.00 WIB**: Sidang Pleno 1
+* **14.00 – 15.30 WIB**: Sidang Pleno 2
+* **15.30 – 15.45 WIB**: Penutup
+
+[SK SKP: SK-SKP-000030/PD-IAI/SIAP/Jawa Timur/II/2024](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")
