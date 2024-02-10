@@ -1,6 +1,5 @@
 ---
-title: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar
-  Periode 2023 – 2027 Dan Rapat Kerja, Serta Seminar
+title: Seminar & Rapat Kerja Cabang IAI Kabupaten Blitar 2024
 slug: pelantikan-pengurus-cabang-ikatan-apoteker-indonesia-kabupaten-blitar-periode-2023-2027-dan-rapat-kerja-serta-seminar
 date: 2024-02-24 07:00
 time: 07:00 - 15:45
@@ -19,6 +18,15 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 1. Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar periode 2023 – 2027
 2. Seminar dengan Tema **"Peran Organisasi Profesi Ikatan Apoteker Indonesia Pasca Pengesahan Undang-Undang Kesehatan No 17 Tahun 2023"**.
 3. Rapat kerja seluruh anggota Ikatan Apoteker Indonesia Pengurus Cabang Kabupaten Blitar tahun 2024
+
+![](flyer-seminar-rakercab-2024.jpeg)
+
+**Pendaftaran:**
+
+- **Anggota** PC IAI Kabupaten Blitar **Rp. 50.000,-**
+- **Non Anggota** PC IAI Kabupaten Blitar **Rp. 100.000,-**
+- **Rek BNI 1666694732 a.n Nenin Rika Susanti**
+- Peserta mempunyai akun SIAP aktif dan mengajukan pendaftaran kegiatan ini di SIAP.
 
 **Rangkaian Acara:**
 
