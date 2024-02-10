@@ -3,6 +3,7 @@ import slugify from "@sindresorhus/slugify";
 import id from "./id";
 import postsCollection from "./postsCollection";
 import eventsCollection from "./eventsCollection";
+import registerFile from "./registerFile";
 
 CMS.registerLocale("id", id);
 
@@ -46,5 +47,7 @@ CMS.registerEventListener({
     return entry.get("data").set("slug", slug);
   },
 });
+
+CMS.registerEditorComponent(registerFile);
 
 CMS.init({ config });
