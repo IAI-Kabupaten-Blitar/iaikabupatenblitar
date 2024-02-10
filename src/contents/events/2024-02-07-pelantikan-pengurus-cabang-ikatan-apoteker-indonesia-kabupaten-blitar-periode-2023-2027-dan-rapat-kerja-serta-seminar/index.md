@@ -39,4 +39,6 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 * **14.00 – 15.30 WIB**: Sidang Pleno 2
 * **15.30 – 15.45 WIB**: Penutup
 
-[SK SKP: SK-SKP-000030/PD-IAI/SIAP/Jawa Timur/II/2024](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")
+---
+
+***Unduh SK SKP*** : [SK-SKP-000030/PD-IAI/SIAP/Jawa Timur/II/2024](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")
