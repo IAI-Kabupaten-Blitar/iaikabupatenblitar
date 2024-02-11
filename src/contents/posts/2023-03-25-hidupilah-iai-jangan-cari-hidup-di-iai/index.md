@@ -1,9 +1,9 @@
 ---
-slug: "hidupilah-iai-jangan-cari-hidup-di-iai"
-date: "2023-03-25"
-title: "Hidupilah IAI, Jangan Cari Hidup di IAI"
-author: "Wisnu Winoto"
-thumbnail: "thumbnail.jpg"
+title: Hidupilah IAI, Jangan Cari Hidup di IAI
+slug: hidupilah-iai-jangan-cari-hidup-di-iai
+date: 2023-03-25
+author: Wisnu Winoto
+thumbnail: thumbnail.jpg
 ---
 
 _Assalamualaikum Warahmatullahi Wabarakatuh,_
@@ -22,7 +22,7 @@ Pertama-tama, saya ingin menekankan bahwa menjadi pengurus adalah sebuah pengabd
 
 Kedua, mari kita hidup dan menjunjung tinggi Ikatan Apoteker Indonesia (IAI) sebagai wadah kita dalam mengembangkan diri dan berkontribusi bagi masyarakat. Namun, **jangan sampai kita hidup dari IAI**. Mari berjuang dan bekerja secara profesional untuk mendapatkan sumber penghidupan yang halal dan berkualitas.
 
-![GATSBY_EMPTY_ALT](./hidupilah-iai-jangan-cari-hidup-di-iai.jpg '***"Hidupilah IAI, jangan cari hidup di IAI"***')
+![GATSBY_EMPTY_ALT](hidupilah-iai-jangan-cari-hidup-di-iai.jpg '"Hidupilah IAI, jangan cari hidup di IAI"')
 
 Ketiga, menjadi pengurus bukanlah perkara mudah. Dibutuhkan kesabaran, kejujuran, dan rasa rendah hati untuk menghadapi berbagai tantangan yang akan dihadapi. Jangan biarkan _ego_ pribadi menghalangi langkah kita dalam menjalankan tugas dan tanggung jawab sebagai pengurus. Jaga hubungan yang baik dengan anggota dan berusaha untuk menjadikan mereka sejahtera.
 
