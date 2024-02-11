@@ -20,6 +20,10 @@ const config = {
   collections: [postsCollection, eventsCollection],
 };
 
+if (process.env.NODE_ENV === "development") {
+  config.backend.name = "git-gateway";
+}
+
 if (process.env.NODE_ENV === "production") {
   if (process.env.GATSBY_BASE_URL) {
     config.backend.base_url = process.env.GATSBY_BASE_URL;
