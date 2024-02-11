@@ -36,7 +36,6 @@ const Events = ({ events, section }) => {
                           <span className="date__mon-text">
                             {date.format("YYYY")}
                           </span>
-                          <span className="date__mon-text"></span>
                         </span>
                       </div>
                     </Link>
