@@ -7,6 +7,7 @@ const EventsDetail = ({ content, next, prev }) => {
   const { frontmatter, html } = content;
   const image = frontmatter.thumbnail.childImageSharp.gatsbyImageData;
   const title = frontmatter.title;
+  moment.locale("id");
   const date = moment(frontmatter.date);
   const maps = frontmatter.maps;
   const qrcode = frontmatter.qrcode;
@@ -27,6 +28,9 @@ const EventsDetail = ({ content, next, prev }) => {
                       </span>
                       <span className="date__mon-text">
                         {date.format("MMMM")}
+                      </span>
+                      <span className="date__mon-text">
+                        {date.format("YYYY")}
                       </span>
                     </span>
                   )}
