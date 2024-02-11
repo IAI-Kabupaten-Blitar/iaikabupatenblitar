@@ -27,7 +27,7 @@ const registerFile = {
   ],
 
   // Pattern to identify a block as being an instance of this component
-  pattern: /\[(.*)\]\(undefined\ "File"\)/,
+  pattern: /\[(.*)\]\(undefined "File"\)/,
 
   // Function to extract data elements from the regexp match
   fromBlock(match) {
