@@ -13,13 +13,13 @@ const EventsHome = () => {
         edges {
           node {
             id
-            excerpt(format: PLAIN)
             frontmatter {
-              date(formatString: "DD MMMM YYYY", locale: "id_ID")
-              time
+              contacts
+              coordinate
+              date
+              location
               slug
               title
-              location
               thumbnail {
                 childImageSharp {
                   gatsbyImageData(
