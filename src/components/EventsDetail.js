@@ -59,7 +59,7 @@ const EventsDetail = ({ content, next, prev }) => {
                       {date.format("DD MMMM YYYY")} ({date.fromNow()})
                     </li>
                   )}
-                  {frontmatter.contacts.length > 0 && (
+                  {frontmatter.contacts && frontmatter.contacts.length > 0 && (
                     <li>
                       {frontmatter.contacts.map((contact, index) => {
                         return (
