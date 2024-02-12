@@ -14,7 +14,7 @@ Blitar, Jawa Timur – Ikatan Apoteker Indonesia (IAI) Cabang Kabupaten Blitar a
 
 Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan beberapa sasaran utama, yaitu:
 
-1. Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar periode 2023 – 2027
+1. Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar periode 2022 – 2026
 2. Seminar dengan Tema **"Peran Organisasi Profesi Ikatan Apoteker Indonesia Pasca Pengesahan Undang-Undang Kesehatan No 17 Tahun 2023"**.
 3. Rapat kerja seluruh anggota Ikatan Apoteker Indonesia Pengurus Cabang Kabupaten Blitar tahun 2024
 
@@ -29,7 +29,7 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 * **07.00 – 07.50 WIB**: Registrasi
 * **08.00 – 08.30 WIB**: Pembukaan
 * **08.30 – 10.30 WIB**: Seminar
-* **10.30 – 11.00 WIB**: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2023 – 2027
+* **10.30 – 11.00 WIB**: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2022 – 2026
 * **11.00 – 11.50 WIB**: Presentasi Bidang, Persiapan Raker
 * **12.10 – 13.00 WIB**: *Ishoma*
 * **13.00 – 14.00 WIB**: Sidang Pleno 1
