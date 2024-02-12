@@ -18,12 +18,9 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 2. Seminar dengan Tema **"Peran Organisasi Profesi Ikatan Apoteker Indonesia Pasca Pengesahan Undang-Undang Kesehatan No 17 Tahun 2023"**.
 3. Rapat kerja seluruh anggota Ikatan Apoteker Indonesia Pengurus Cabang Kabupaten Blitar tahun 2024
 
-![](flyer-seminar-rakercab-2024.jpeg)
-
 **Pendaftaran:**
 
 * **Anggota** PC IAI Kabupaten Blitar **Rp. 50.000,-**
-* **Non Anggota** PC IAI Kabupaten Blitar **Rp. 100.000,-**
 * **Rek BNI 1666694732 a.n Nenin Rika Susanti**
 * Peserta mempunyai akun SIAP aktif dan mengajukan pendaftaran kegiatan ini di SIAP.
 
@@ -39,6 +36,6 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 * **14.00 – 15.30 WIB**: Sidang Pleno 2
 * **15.30 – 15.45 WIB**: Penutup
 
----
+- - -
 
 ***Unduh SK SKP*** : [SK-SKP-000030/PD-IAI/SIAP/Jawa Timur/II/2024](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")
