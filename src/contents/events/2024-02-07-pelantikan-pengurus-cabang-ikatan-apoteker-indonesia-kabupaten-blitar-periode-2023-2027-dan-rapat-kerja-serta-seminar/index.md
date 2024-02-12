@@ -21,7 +21,7 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 
 **Pendaftaran:**
 
-* **Biaya Pendaftaran Rp. 50.000,- (**Anggota PC IAI Kabupaten Blitar & Apoteker Praktik di Kab. Blitar)
+* **Biaya Pendaftaran Rp. 50.000,-** (Anggota PC IAI Kabupaten Blitar & Apoteker Praktik di Kab. Blitar)
 * **Rek BNI 1666694732 a.n Nenin Rika Susanti [WA Konfirmasi Pembayaran +62 822-3409-9940](https://wa.me/6282234099940)**
 * Peserta mengajukan pendaftaran kegiatan ini di aplikasi **[SIAP](https://apoteker.or.id/#!/access/)**.
 
