@@ -31,8 +31,8 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 
 * **07.00 – 07.50 WIB**: Registrasi
 * **08.00 – 08.30 WIB**: Pembukaan
-* **08.30 – 10.30 WIB**: Seminar
-* **10.30 – 11.00 WIB**: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2022 – 2026
+* **08.30 – 09.00 WIB**: Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2022 – 2026
+* **09.00 – 11.00 WIB**: Seminar
 * **11.00 – 11.50 WIB**: Presentasi Bidang, Persiapan Raker
 * **12.10 – 13.00 WIB**: *Ishoma*
 * **13.00 – 14.00 WIB**: Sidang Pleno 1
