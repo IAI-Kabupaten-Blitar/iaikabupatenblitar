@@ -7,8 +7,8 @@ location: Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar,  Jl.
   Kusuma Bangsa, No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur.
 maps: https://maps.app.goo.gl/SGRp2Tn9x4uvSVLF8
 contacts:
-  - apt. Nenin Rika Susanti, S.Farm (+62 822-3409-9940) (Konfirmasi Pembayaran)
-  - apt. Pristina Pangestuti, S.Farm (+62 858-1572-5313) (Sponsorship)
+  - "Konfirmasi Pembayaran: apt. Nenin Rika Susanti, S.Farm (+62 822-3409-9940)"
+  - "Sponsorship: apt. Pristina Pangestuti, S.Farm (+62 858-1572-5313)"
 thumbnail: seminar-raker-2024.png
 ---
 Blitar, Jawa Timur – Ikatan Apoteker Indonesia (IAI) Cabang Kabupaten Blitar akan mengadakan kegiatan bertajuk **"Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2022 – 2026 Dan Rapat Kerja, Serta Seminar"** pada hari Sabtu, 24 Februari 2024. Acara ini akan berlangsung di Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar Jl. Kusuma Bangsa, No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur.
@@ -25,7 +25,7 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 * **Rek BNI 1666694732 a.n Nenin Rika Susanti [WA Konfirmasi Pembayaran +62 822-3409-9940](https://wa.me/6282234099940)**
 * Peserta mengajukan pendaftaran kegiatan ini di aplikasi **[SIAP](https://apoteker.or.id/#!/access/)**.
 
-![Flyer Seminar dan Rakercab 2024 IAI Kabupaten Blitar](flyer-rev-2024.jpeg)
+![Flyer Seminar dan Rakercab 2024 IAI Kabupaten Blitar](flyer-rev-2024.jpeg "Flyer Seminar dan Rakercab 2024 IAI Kabupaten Blitar")
 
 **Rangkaian Acara:**
 
