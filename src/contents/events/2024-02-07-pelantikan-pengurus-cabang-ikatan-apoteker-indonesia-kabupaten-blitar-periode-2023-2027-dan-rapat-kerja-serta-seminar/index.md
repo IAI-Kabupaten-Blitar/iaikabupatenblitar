@@ -11,6 +11,14 @@ contacts:
   - "Sponsorship: apt. Pristina Pangestuti, S.Farm (+62 858-1572-5313)"
 thumbnail: seminar-raker-2024.png
 ---
+***Unduh SK SKP*** : [SK-SKP-000030/PD-IAI/SIAP/Jawa Timur/II/2024](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")
+
+[](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")***Unduh Materi 1*** :[Perijinan OP 2024 - Dinkes Kabupaten Blitar](ppt-untuk-perijinan-op-2024.pdf "File")
+
+[](ppt-untuk-perijinan-op-2024.pdf "File")***Unduh Materi 2*** :[Sosialisasi Edaran terkait Verifikasi SKP dan Layanan SKK pada Aplikasi SIAp](sosialisasi-edaran-terkait-verifikasi-skp-dan-layanan-skk-pada-aplikasi-siap.pdf "File")
+
+- - -
+
 Blitar, Jawa Timur – Ikatan Apoteker Indonesia (IAI) Cabang Kabupaten Blitar akan mengadakan kegiatan bertajuk **"Pelantikan Pengurus Cabang Ikatan Apoteker Indonesia Kabupaten Blitar Periode 2022 – 2026 Dan Rapat Kerja, Serta Seminar"** pada hari Sabtu, 24 Februari 2024. Acara ini akan berlangsung di Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar Jl. Kusuma Bangsa, No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur.
 
 Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan beberapa sasaran utama, yaitu:
@@ -38,7 +46,3 @@ Kegiatan ini wajib diikuti oleh seluruh anggota IAI Kabupaten Blitar dengan bebe
 * **13.00 – 14.00 WIB**: Sidang Pleno 1
 * **14.00 – 15.30 WIB**: Sidang Pleno 2
 * **15.30 – 15.45 WIB**: Penutup
-
-- - -
-
-***Unduh SK SKP*** : [SK-SKP-000030/PD-IAI/SIAP/Jawa Timur/II/2024](sk-skp-000030⁄pd-iai⁄siap⁄jawa-timur⁄ii⁄2024.pdf "File")
