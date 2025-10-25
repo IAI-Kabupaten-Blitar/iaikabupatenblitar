@@ -13,6 +13,16 @@ thumbnail: view.jpeg
 ---
 ## **Pengumuman Seminar dan Rakercab IAI PC Kabupaten Blitar 2025**
 
+
+
+***Unduh Materi 1*:** [PERKEMBANGAN & ARAH REGULASI... (apt. Primadi Avianto, M.Farm.Klin)](v1_perkembangan_regulasi_-_arah_perkembangan_praktik_apoteker.pdf "File")[](v1_perkembangan_regulasi_-_arah_perkembangan_praktik_apoteker.pdf "File")
+
+***Unduh Materi 2:*** [TANTANGAN DAN PELUANG : TENAGA KEFARMASIAN... (apt. Adi Wibisono, S.Si., M.Kes)](blitarkab_tenagakefarmasianpharmapreneurship.pdf "File")[](blitarkab_tenagakefarmasianpharmapreneurship.pdf "File")
+
+***Unduh Materi 3:*** [Peran Apoteker dalam Strategi Meningkatkan Revenue...(apt. Muhamad Edy Santoso, S.Farm, CSCAP., CPSE)](materi-edy_rakercab-iai-kab-blitar-2025.pptx.pdf "File")
+
+- - -
+
 Ikatan Apoteker Indonesia (IAI) Pimpinan Cabang Kabupaten Blitar dengan bangga mengumumkan pelaksanaan **Seminar dan Rapat Kerja Cabang (Rakercab) Tahun 2025**, yang akan diselenggarakan pada:
 
 📅 **Hari/Tanggal:** Sabtu, 25 Oktober 2025
@@ -21,7 +31,7 @@ Ikatan Apoteker Indonesia (IAI) Pimpinan Cabang Kabupaten Blitar dengan bangga m
 **Kantor Bupati Kabupaten Blitar**
 Jl. Kusuma Bangsa No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur
 
----
+- - -
 
 ### **Seminar:**
 
@@ -30,15 +40,15 @@ Jl. Kusuma Bangsa No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur
 
 Seminar ini akan membahas berbagai isu strategis dalam dunia kefarmasian, khususnya peluang dan tantangan apoteker di era regulasi yang terus berkembang. Diharapkan peserta dapat memperoleh wawasan baru serta mengembangkan inovasi dan semangat *pharmapreneurship* dalam praktik kefarmasian.
 
----
+- - -
 
 ### **Ketentuan Peserta:**
 
 1. Peserta **wajib memiliki akun SATUSEHAT SDMK** yang **aktif** dan **sudah tertaut** dengan **LMS Kementerian Kesehatan (lms.kemkes.go.id)**.
 2. Pendaftaran dilakukan melalui tautan seminar resmi di:
-   🔗 [https://lms.kemkes.go.id/courses/e82f74b2-f10a-48d1-a4f4-ef7d31ac2cb1](https://lms.kemkes.go.id/courses/e82f74b2-f10a-48d1-a4f4-ef7d31ac2cb1)
+   🔗 <https://lms.kemkes.go.id/courses/e82f74b2-f10a-48d1-a4f4-ef7d31ac2cb1>
 
----
+- - -
 
 ### **Agenda Kegiatan:**
 
@@ -48,6 +58,6 @@ Selain seminar, kegiatan ini juga akan dilanjutkan dengan **Rapat Kerja Cabang (
 * Merumuskan strategi dan arah kebijakan organisasi,
 * Meningkatkan sinergi antaranggota dalam memajukan pelayanan kefarmasian di wilayah Kabupaten Blitar.
 
----
+- - -
 
 Mari bersama-sama kita sukseskan **Seminar dan Rakercab IAI PC Kabupaten Blitar 2025**, demi kemajuan profesi apoteker dan pelayanan kesehatan masyarakat yang lebih inovatif dan berdaya saing!
