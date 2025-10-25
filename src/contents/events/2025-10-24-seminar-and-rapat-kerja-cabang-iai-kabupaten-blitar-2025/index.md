@@ -13,8 +13,6 @@ thumbnail: view.jpeg
 ---
 ## **Pengumuman Seminar dan Rakercab IAI PC Kabupaten Blitar 2025**
 
-
-
 ***Unduh Materi 1*:** [PERKEMBANGAN & ARAH REGULASI... (apt. Primadi Avianto, M.Farm.Klin)](v1_perkembangan_regulasi_-_arah_perkembangan_praktik_apoteker.pdf "File")[](v1_perkembangan_regulasi_-_arah_perkembangan_praktik_apoteker.pdf "File")
 
 ***Unduh Materi 2:*** [TANTANGAN DAN PELUANG : TENAGA KEFARMASIAN... (apt. Adi Wibisono, S.Si., M.Kes)](blitarkab_tenagakefarmasianpharmapreneurship.pdf "File")[](blitarkab_tenagakefarmasianpharmapreneurship.pdf "File")
@@ -26,10 +24,10 @@ thumbnail: view.jpeg
 Ikatan Apoteker Indonesia (IAI) Pimpinan Cabang Kabupaten Blitar dengan bangga mengumumkan pelaksanaan **Seminar dan Rapat Kerja Cabang (Rakercab) Tahun 2025**, yang akan diselenggarakan pada:
 
 📅 **Hari/Tanggal:** Sabtu, 25 Oktober 2025
+
 🕘 **Waktu:** Pukul 08.00 WIB – selesai
-📍 **Tempat:** Ruang Candi Penataran, Lantai 3
-**Kantor Bupati Kabupaten Blitar**
-Jl. Kusuma Bangsa No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur
+
+📍 **Tempat:** Ruang Candi Penataran, Lantai 3 **Kantor Bupati Kabupaten Blitar** Jl. Kusuma Bangsa No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur
 
 - - -
 
