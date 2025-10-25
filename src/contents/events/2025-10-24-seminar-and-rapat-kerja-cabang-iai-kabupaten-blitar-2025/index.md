@@ -21,6 +21,8 @@ thumbnail: view.jpeg
 
 ***Unduh Materi 3:*** [Peran Apoteker dalam Strategi Meningkatkan Revenue...(apt. Muhamad Edy Santoso, S.Farm, CSCAP., CPSE)](materi-edy_rakercab-iai-kab-blitar-2025.pptx.pdf "File")
 
+- - -
+
 Ikatan Apoteker Indonesia (IAI) Pimpinan Cabang Kabupaten Blitar dengan bangga mengumumkan pelaksanaan **Seminar dan Rapat Kerja Cabang (Rakercab) Tahun 2025**, yang akan diselenggarakan pada:
 
 📅 **Hari/Tanggal:** Sabtu, 25 Oktober 2025
