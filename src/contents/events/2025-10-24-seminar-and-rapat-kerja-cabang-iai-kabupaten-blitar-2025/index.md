@@ -1,7 +1,7 @@
 ---
 title: Seminar & Rapat Kerja Cabang IAI Kabupaten Blitar 2025
 slug: seminar-and-rapat-kerja-cabang-iai-kabupaten-blitar-2025
-date: 2025-10-24 15:07
+date: 2025-10-25 07:30
 time: 08:00 - Selesai
 location: Ruang Candi Penataran Lantai 3 Kantor Bupati Kabupaten Blitar,  Jl.
   Kusuma Bangsa, No. 60, Kec. Kanigoro, Kab. Blitar, Jawa Timur.
