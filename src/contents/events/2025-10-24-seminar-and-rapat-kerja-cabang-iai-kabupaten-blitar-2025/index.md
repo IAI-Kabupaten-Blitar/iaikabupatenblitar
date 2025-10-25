@@ -15,6 +15,12 @@ thumbnail: view.jpeg
 
 [PERKEMBANGAN & ARAH REGULASI... (apt. Primadi Avianto, M.Farm.Klin)](v1_perkembangan_regulasi_-_arah_perkembangan_praktik_apoteker.pdf "File")
 
+[](v1_perkembangan_regulasi_-_arah_perkembangan_praktik_apoteker.pdf "File")
+
+[ TANTANGAN DAN PELUANG : TENAGA KEFARMASIAN... (apt. Adi Wibisono, S.Si., M.Kes)](blitarkab_tenagakefarmasianpharmapreneurship.pdf "File")
+
+
+
 Ikatan Apoteker Indonesia (IAI) Pimpinan Cabang Kabupaten Blitar dengan bangga mengumumkan pelaksanaan **Seminar dan Rapat Kerja Cabang (Rakercab) Tahun 2025**, yang akan diselenggarakan pada:
 
 📅 **Hari/Tanggal:** Sabtu, 25 Oktober 2025
