@@ -48,9 +48,7 @@ Seminar ini akan membahas berbagai isu strategis dalam dunia kefarmasian, khusus
 
 - - -
 
-### **Agenda Kegiatan:**
-
-Selain seminar, kegiatan ini juga akan dilanjutkan dengan **Rapat Kerja Cabang (Rakercab) IAI PC Kabupaten Blitar**, yang bertujuan untuk:
+Selesai seminar, kegiatan dilanjutkan dengan **Rapat Kerja Cabang (Rakercab) IAI PC Kabupaten Blitar**, yang bertujuan untuk:
 
 * Mengevaluasi program kerja periode sebelumnya,
 * Merumuskan strategi dan arah kebijakan organisasi,
