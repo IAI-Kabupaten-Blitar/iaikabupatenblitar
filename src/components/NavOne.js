@@ -81,6 +81,7 @@ class NavOne extends Component {
                             href="https://www.facebook.com/groups/apotekerblitar/"
                             rel="noreferrer"
                             target="_blank"
+                            aria-label="Facebook"
                           >
                             <i className="fa fa-facebook"></i>
                           </a>
@@ -90,6 +91,7 @@ class NavOne extends Component {
                             href="https://www.instagram.com/iaikabblitar/"
                             rel="noreferrer"
                             target="_blank"
+                            aria-label="Instagram"
                           >
                             <i className="fa fa-instagram"></i>
                           </a>
@@ -99,6 +101,7 @@ class NavOne extends Component {
                             href="https://www.youtube.com/@iaipckabupatenblitar4225"
                             rel="noreferrer"
                             target="_blank"
+                            aria-label="Visit our YouTube channel"
                           >
                             <i className="fa fa-youtube"></i>
                           </a>

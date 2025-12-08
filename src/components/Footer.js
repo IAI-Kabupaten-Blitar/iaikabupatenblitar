@@ -59,6 +59,7 @@ class Footer extends Component {
           tabIndex="0"
           onClick={this.scrollTop}
           id="back-to-top"
+          aria-label="Scroll to top"
           className={this.state.scrollBtn ? "back-btn-shown" : ""}
         >
           <i className="fa fa-angle-up" title="Go top"></i>
