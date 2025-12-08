@@ -24,6 +24,12 @@ if (process.env.NODE_ENV === "development") {
   config.backend.name = "git-gateway";
 }
 
+if (process.env.NODE_ENV === "development" && process.env.PORT !== undefined) {
+  config.local_backend = {
+    url: `http://localhost:${process.env.PORT}/api/v1`,
+  };
+}
+
 if (process.env.NODE_ENV === "production") {
   if (process.env.GATSBY_BASE_URL) {
     config.backend.base_url = process.env.GATSBY_BASE_URL;
