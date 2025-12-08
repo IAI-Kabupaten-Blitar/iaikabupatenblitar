@@ -5,8 +5,7 @@ date: 2023-03-25
 author: Wisnu Winoto
 thumbnail: thumbnail.jpg
 ---
-
-_Assalamualaikum Warahmatullahi Wabarakatuh,_
+*Assalamualaikum Warahmatullahi Wabarakatuh,*
 
 Saya, **apoteker Wisnu Winoto S.Farm**, selaku Ketua Ikatan Apoteker Kabupaten Blitar periode 2019-2023, ingin menyampaikan beberapa pesan dan nasehat untuk seluruh anggota Ikatan Apoteker Kabupaten Blitar, terutama kepada ketua terpilih, sejawat **apoteker Daning Irawati, S.Farm** dan jajaran pengurus yang akan segera dibentuk.
 
@@ -22,10 +21,10 @@ Pertama-tama, saya ingin menekankan bahwa menjadi pengurus adalah sebuah pengabd
 
 Kedua, mari kita hidup dan menjunjung tinggi Ikatan Apoteker Indonesia (IAI) sebagai wadah kita dalam mengembangkan diri dan berkontribusi bagi masyarakat. Namun, **jangan sampai kita hidup dari IAI**. Mari berjuang dan bekerja secara profesional untuk mendapatkan sumber penghidupan yang halal dan berkualitas.
 
-![GATSBY_EMPTY_ALT](hidupilah-iai-jangan-cari-hidup-di-iai.jpg '"Hidupilah IAI, jangan cari hidup di IAI"')
+![GATSBY_EMPTY_ALT](hidupilah-iai-jangan-cari-hidup-di-iai.jpg "Hidupilah IAI, jangan cari hidup di IAI")
 
-Ketiga, menjadi pengurus bukanlah perkara mudah. Dibutuhkan kesabaran, kejujuran, dan rasa rendah hati untuk menghadapi berbagai tantangan yang akan dihadapi. Jangan biarkan _ego_ pribadi menghalangi langkah kita dalam menjalankan tugas dan tanggung jawab sebagai pengurus. Jaga hubungan yang baik dengan anggota dan berusaha untuk menjadikan mereka sejahtera.
+Ketiga, menjadi pengurus bukanlah perkara mudah. Dibutuhkan kesabaran, kejujuran, dan rasa rendah hati untuk menghadapi berbagai tantangan yang akan dihadapi. Jangan biarkan *ego* pribadi menghalangi langkah kita dalam menjalankan tugas dan tanggung jawab sebagai pengurus. Jaga hubungan yang baik dengan anggota dan berusaha untuk menjadikan mereka sejahtera.
 
 Demikianlah pesan dan nasehat dari saya untuk ketua terpilih dan jajaran pengurus yang akan segera dibentuk. Semoga kita semua dapat terus memperkuat kebersamaan, menjaga semangat perjuangan, serta mengemban amanah kepemimpinan dengan penuh tanggung jawab dan integritas.
 
-_Wassalamualaikum Warahmatullahi Wabarakatuh._
+*Wassalamualaikum Warahmatullahi Wabarakatuh.*
