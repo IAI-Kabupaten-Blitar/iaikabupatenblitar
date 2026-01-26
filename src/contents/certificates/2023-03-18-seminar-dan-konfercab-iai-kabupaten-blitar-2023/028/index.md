@@ -1,6 +1,6 @@
 ---
 nomor: "028"
-sertifikat: "2023/KONFERCAB.IAI/III/026"
+sertifikat: "2023/KONFERCAB.IAI/III/028"
 peserta: "apt. Yeti Windianalis, S.Si"
 skiai: "SK-SKP-000033/PD-IAI/SIAP/Jawa Timur/II/2023"
 skp: "10"
